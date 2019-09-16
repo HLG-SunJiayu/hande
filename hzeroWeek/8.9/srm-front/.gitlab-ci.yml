@@ -1,0 +1,82 @@
+image: registry.cn-hangzhou.aliyuncs.com/choerodon-tools/cifront:0.7.0
+
+stages:
+  - node_build
+  - docker_build
+
+node_build:
+  stage: node_build
+  script:
+    - node_config
+    - node_module
+    - node_build
+    - cache_dist
+  artifacts:
+    paths:
+    - .auto_devops.sh
+  only:
+    # - /^release-.*$/
+    # - /^hotfix-.*$/
+    - master
+    - develop
+    # - tags
+
+
+docker_build:
+  image: registry.cn-hangzhou.aliyuncs.com/choerodon-tools/cibase:0.7.0
+  stage: docker_build
+  script:
+    - docker_build
+    - clean_cache
+    - chart_build
+  only:
+    - master
+    - develop
+    # - /^release-.*$/
+    # - /^hotfix-.*$/
+    # - tags
+
+.auto_devops: &auto_devops |
+
+    # cat "curl -o .auto_devops.sh ${CHOERODON_URL}/devops/ci?token=${Token}&type=front"
+    curl -o .auto_devops.sh \
+        "${CHOERODON_URL}/devops/ci?token=${Token}&type=front"
+    #if [ $? -ne 0 ];then
+      cat .auto_devops.sh
+      #exit 1
+    #fi
+    source .auto_devops.sh
+
+    function node_config() {
+      yarn global add lerna
+      yarn config set registry http://nexus.saas.hand-china.com/content/groups/srm-npm-group/
+      npm config set registry http://nexus.saas.hand-china.com/content/groups/srm-npm-group/
+      export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
+    }
+
+    function node_module(){
+        mkdir -p /cache/${CI_PROJECT_NAME}-${CI_PROJECT_ID}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHA}
+        lerna bootstrap
+        lerna run transpile
+    }
+
+    function node_build(){
+      yarn build:dll
+      yarn build
+    }
+
+    function cache_dist(){
+      cp -r dist /cache/${CI_PROJECT_NAME}-${CI_PROJECT_ID}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHA}/dist
+    }
+
+    function docker_build(){
+        cp -r /cache/${CI_PROJECT_NAME}-${CI_PROJECT_ID}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHA}/* ${1:-"."}
+        docker login -u ${DOCKER_USER} -p ${DOCKER_PWD} ${DOCKER_REGISTRY}
+        docker build --pull -t ${DOCKER_REGISTRY}/${GROUP_NAME}/${PROJECT_NAME}:${CI_COMMIT_TAG} ${1:-"."}
+        docker push ${DOCKER_REGISTRY}/${GROUP_NAME}/${PROJECT_NAME}:${CI_COMMIT_TAG}
+        echo "${DOCKER_REGISTRY}/${GROUP_NAME}/${PROJECT_NAME}:${CI_COMMIT_TAG}"
+    }
+
+
+before_script:
+  - *auto_devops

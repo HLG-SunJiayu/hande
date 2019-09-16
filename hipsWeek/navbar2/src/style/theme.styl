@@ -1,0 +1,56 @@
+@import "var.styl"
+
+.hips-view__content {
+  -webkit-overflow-scrolling touch
+}
+
+.hips-view__header {
+  .hips-tabs {
+    width 70%
+    margin-left 15%
+
+    .hips-tabs__wrapper {
+      &:after {
+        border-bottom-width 0
+      }
+
+      .hips-tab--active {
+        color $font-color !important
+      }
+    }
+  }
+}
+
+// 平移滑动
+.router-slide-left {
+  &-enter {
+    opacity: .6
+    transform: translate3d(100%, 0, 0)
+  }
+
+  &-leave-to {
+    opacity: .6
+    transform: translate3d(-30%, 0, 0)
+  }
+
+  &-enter-active, &-leave-active {
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1)
+  }
+}
+
+.router-slide-right {
+  &-enter {
+    opacity: 1
+    transform: translate3d(-30%, 0, 0)
+  }
+
+  &-leave-to {
+    opacity: .6
+    transform: translate3d(100%, 0, 0)
+  }
+
+  &-enter-active, &-leave-active {
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1)
+  }
+}
+

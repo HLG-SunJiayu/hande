@@ -1,0 +1,3612 @@
+[
+  {
+    "path": "/",
+    "models": [
+      "user",
+      "login"
+    ]
+  },
+  {
+    "path": "/workplace",
+    "models": [
+      "hpfm/workplace",
+      "hptl/portalAssign",
+      "dashboard/cards"
+    ],
+    "component": "Dashboard/Workplace"
+  },
+  {
+    "path": "/hiam/user/info",
+    "models": [
+      "hiam/userInfo",
+      "hmsg/userReceiveConfig"
+    ],
+    "component": "hiam/UserInfo"
+  },
+  {
+    "path": "/hiam/user/login-log",
+    "models": [
+      "hpfm/personalLoginRecord"
+    ],
+    "component": "hpfm/PersonalLoginRecord"
+  },
+  {
+    "path": "/hiam/sub-account-org/users",
+    "models": [
+      "hiam/subAccountOrg"
+    ],
+    "component": "hiam/SubAccount/Org"
+  },
+  {
+    "path": "/hiam/sub-account-org/data-import/",
+    "models": [
+      "/*himp/commentImport*/"
+    ],
+    "component": "himp/CommentImport"
+  },
+  {
+    "path": "/hiam/sub-account-site",
+    "models": [
+      "hiam/subAccount"
+    ],
+    "component": "hiam/SubAccount/Site"
+  },
+  {
+    "path": "/hiam/sub-account-org/authority-management",
+    "models": [
+      "hiam/authorityManagement/authorityManagement",
+      "hiam/authorityManagement/authorityCompany",
+      "hiam/authorityManagement/authorityCustomer",
+      "hiam/authorityManagement/authoritySupplier",
+      "hiam/authorityManagement/authorityPurorg",
+      "hiam/authorityManagement/authorityPuragent",
+      "hiam/authorityManagement/authorityPurcat",
+      ""
+    ],
+    "component": "hiam/SubAccount/Org/AuthorityManagement"
+  },
+  {
+    "path": "/hiam/doc-type",
+    "models": [
+      "hiam/docType"
+    ],
+    "component": "hiam/DocType"
+  },
+  {
+    "path": "/hiam/open-app",
+    "models": [
+      "hiam/openApp"
+    ],
+    "component": "hiam/OpenApp"
+  },
+  {
+    "path": "/hiam/ldap",
+    "models": [
+      "hiam/ldap"
+    ],
+    "component": "hiam/LDAP"
+  },
+  {
+    "path": "/hiam/client",
+    "models": [
+      "hiam/client"
+    ],
+    "component": "hiam/Client"
+  },
+  {
+    "path": "/hpfm/dashboard-clause/list",
+    "models": [
+      "hpfm/dashboardClause"
+    ],
+    "component": "hpfm/DashboardClause"
+  },
+  {
+    "path": "/hpfm/dashboard-clause/detail/",
+    "models": [
+      "hpfm/dashboardClause"
+    ],
+    "component": "hpfm/DashboardClause/Detail"
+  },
+  {
+    "path": "/hpfm/dashboard-clause/create",
+    "models": [
+      "hpfm/dashboardClause"
+    ],
+    "component": "hpfm/DashboardClause/Detail"
+  },
+  {
+    "path": "/hpfm/lov-view/lov-view-list",
+    "models": [
+      "hpfm/lovSetting"
+    ],
+    "component": "hpfm/Lov/LovSetting"
+  },
+  {
+    "path": "/hpfm/lov-view/detail/",
+    "models": [
+      "hpfm/lovSetting"
+    ],
+    "component": "hpfm/Lov/Detail"
+  },
+  {
+    "path": "/hpfm/code-rule/list",
+    "models": [
+      "hpfm/codeRule"
+    ],
+    "component": "hpfm/CodeRule/CodeRuleList"
+  },
+  {
+    "path": "/hpfm/code-rule/dist/",
+    "models": [
+      "hpfm/codeRule"
+    ],
+    "component": "hpfm/CodeRule/CodeRuleDist"
+  },
+  {
+    "path": "/hpfm/code-rule-org/list",
+    "models": [
+      "hpfm/codeRuleOrg"
+    ],
+    "component": "hpfm/CodeRuleOrg/CodeRuleList"
+  },
+  {
+    "path": "/hpfm/code-rule-org/dist/",
+    "models": [
+      "hpfm/codeRuleOrg"
+    ],
+    "component": "hpfm/CodeRuleOrg/CodeRuleDist"
+  },
+  {
+    "path": "/hpfm/languages",
+    "models": [
+      "hpfm/languages"
+    ],
+    "component": "hpfm/Languages/index"
+  },
+  {
+    "path": "/hpfm/tenants",
+    "models": [
+      "hpfm/tenants"
+    ],
+    "component": "hpfm/Tenants/index"
+  },
+  {
+    "path": "/hpfm/mdm/currency",
+    "models": [
+      "hpfm/currency"
+    ],
+    "component": "hpfm/Currency"
+  },
+  {
+    "path": "/hpfm/mdm/country",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/hpfm/mdm/country/list",
+    "models": [
+      "hpfm/country"
+    ],
+    "component": "hpfm/Country"
+  },
+  {
+    "path": "/hpfm/mdm/country/region/",
+    "models": [
+      "hpfm/region"
+    ],
+    "component": "hpfm/Region"
+  },
+  {
+    "path": "/hpfm/mdm/rate",
+    "models": [
+      "hpfm/rate"
+    ],
+    "component": "hpfm/Rate"
+  },
+  {
+    "path": "/hpfm/mdm/tax-rate",
+    "models": [
+      "hpfm/taxRate"
+    ],
+    "component": "hpfm/TaxRate"
+  },
+  {
+    "path": "/hpfm/mdm/rate-type",
+    "models": [
+      "hpfm/rateType"
+    ],
+    "component": "hpfm/RateType"
+  },
+  {
+    "path": "/hpfm/mdm/uom",
+    "models": [
+      "hpfm/uom"
+    ],
+    "component": "hpfm/Uom"
+  },
+  {
+    "path": "/hpfm/mdm/uom-type",
+    "models": [
+      "hpfm/uomType"
+    ],
+    "component": "hpfm/UomType"
+  },
+  {
+    "path": "/hpfm/mdm/period",
+    "models": [
+      "hpfm/period"
+    ],
+    "component": "hpfm/Period"
+  },
+  {
+    "path": "/hpfm/mdm/industry-category",
+    "models": [
+      "hpfm/industryCategory"
+    ],
+    "component": "hpfm/IndustryCategory"
+  },
+  {
+    "path": "/hpfm/mdm/calendar/list",
+    "models": [
+      "hpfm/calendar"
+    ],
+    "component": "hpfm/Calendar/List"
+  },
+  {
+    "path": "/hpfm/mdm/calendar/detail/",
+    "models": [
+      "hpfm/calendar"
+    ],
+    "component": "hpfm/Calendar/Detail"
+  },
+  {
+    "path": "/hpfm/event",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/hpfm/event/list",
+    "models": [
+      "hpfm/event"
+    ],
+    "component": "hpfm/Event/EventList"
+  },
+  {
+    "path": "/hpfm/event/detail/",
+    "models": [
+      "hpfm/event"
+    ],
+    "component": "hpfm/Event/EventDetail"
+  },
+  {
+    "path": "/hpfm/event/message/",
+    "models": [
+      "hpfm/event"
+    ],
+    "component": "hpfm/Event/EventMessage"
+  },
+  {
+    "path": "/hpfm/prompt",
+    "models": [
+      "hpfm/prompt"
+    ],
+    "component": "hpfm/Prompt"
+  },
+  {
+    "path": "/hpfm/profile",
+    "models": [
+      "hpfm/profile"
+    ],
+    "component": "hpfm/Profile/Site"
+  },
+  {
+    "path": "/hpfm/profile-org",
+    "models": [
+      "hpfm/profileOrg"
+    ],
+    "component": "hpfm/Profile/Org"
+  },
+  {
+    "path": "/hpfm/database",
+    "models": [
+      "hpfm/database"
+    ],
+    "component": "hpfm/Database"
+  },
+  {
+    "path": "/hpfm/data-source",
+    "models": [
+      "hpfm/dataSource"
+    ],
+    "component": "hpfm/DataSource"
+  },
+  {
+    "path": "/hpfm/value-list",
+    "models": [
+      "hpfm/valueList"
+    ]
+  },
+  {
+    "path": "/hpfm/value-list/list",
+    "models": [
+      "hpfm/valueList"
+    ],
+    "component": "hpfm/ValueList"
+  },
+  {
+    "path": "/hpfm/value-list/detail/",
+    "models": [
+      "hpfm/valueList"
+    ],
+    "component": "hpfm/ValueList/ValueDetail"
+  },
+  {
+    "path": "/hpfm/config",
+    "models": [
+      "hpfm/config"
+    ],
+    "component": "hpfm/Config"
+  },
+  {
+    "path": "/hpfm/hr/org",
+    "models": [
+      "hpfm/organization"
+    ]
+  },
+  {
+    "path": "/hpfm/hr/org/company",
+    "models": [
+      "hpfm/organization"
+    ],
+    "component": "hpfm/Organization"
+  },
+  {
+    "path": "/hpfm/hr/org/department/",
+    "models": [
+      "hpfm/department"
+    ],
+    "component": "hpfm/Department"
+  },
+  {
+    "path": "/hpfm/hr/org/post/",
+    "models": [
+      "hpfm/post"
+    ],
+    "component": "hpfm/Post"
+  },
+  {
+    "path": "/hpfm/hr/org/staff/",
+    "models": [
+      "hpfm/staff"
+    ],
+    "component": "hpfm/Staff"
+  },
+  {
+    "path": "/hpfm/hr/staff",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/hpfm/hr/staff/list",
+    "models": [
+      "hpfm/employee"
+    ],
+    "component": "hpfm/Employee/List"
+  },
+  {
+    "path": "/hpfm/hr/staff/detail/",
+    "models": [
+      "hpfm/employee"
+    ],
+    "component": "hpfm/Employee/Detail"
+  },
+  {
+    "path": "/hpfm/org-info",
+    "models": [
+      "hpfm/group"
+    ],
+    "component": "hpfm/OrgInfo"
+  },
+  {
+    "path": "/hpfm/org-info/group",
+    "models": [
+      "hpfm/group"
+    ],
+    "component": "hpfm/OrgInfo/Group"
+  },
+  {
+    "path": "/hpfm/org-info/company",
+    "models": [
+      "hpfm/company",
+      "spfm/enterprise/legal"
+    ],
+    "component": "hpfm/OrgInfo/Company"
+  },
+  {
+    "path": "/hpfm/org-info/purchase-org",
+    "models": [
+      "hpfm/purchaseOrg"
+    ],
+    "component": "hpfm/OrgInfo/PurchaseOrg"
+  },
+  {
+    "path": "/hpfm/org-info/store-room",
+    "models": [
+      "hpfm/storeRoom"
+    ],
+    "component": "hpfm/OrgInfo/StoreRoom"
+  },
+  {
+    "path": "/hpfm/org-info/operation-unit",
+    "models": [
+      "hpfm/operationUnit"
+    ],
+    "component": "hpfm/OrgInfo/OperationUnit"
+  },
+  {
+    "path": "/hpfm/org-info/inventory-org",
+    "models": [
+      "hpfm/inventoryOrg"
+    ],
+    "component": "hpfm/OrgInfo/InventoryOrg"
+  },
+  {
+    "path": "/hpfm/org-info/purchase-agent",
+    "models": [
+      "hpfm/purchaseAgent"
+    ],
+    "component": "hpfm/OrgInfo/PurchaseAgent"
+  },
+  {
+    "path": "/hpfm/org-info/library-position",
+    "models": [
+      "hpfm/libraryPosition"
+    ],
+    "component": "hpfm/OrgInfo/LibraryPosition"
+  },
+  {
+    "path": "/hpfm/static-text",
+    "models": [
+      "hpfm/staticText"
+    ]
+  },
+  {
+    "path": "/hpfm/static-text/list",
+    "models": [
+      "hpfm/staticText"
+    ],
+    "component": "hpfm/StaticText/Site"
+  },
+  {
+    "path": "/hpfm/static-text/detail/",
+    "models": [
+      "hpfm/staticText"
+    ],
+    "component": "hpfm/StaticText/Site/Detail"
+  },
+  {
+    "path": "/hpfm/static-text-org",
+    "models": [
+      "hpfm/staticTextOrg"
+    ]
+  },
+  {
+    "path": "/hpfm/static-text-org/list",
+    "models": [
+      "hpfm/staticTextOrg"
+    ],
+    "component": "hpfm/StaticText/Org"
+  },
+  {
+    "path": "/hpfm/static-text-org/detail/",
+    "models": [
+      "hpfm/staticTextOrg"
+    ],
+    "component": "hpfm/StaticText/Org/Detail"
+  },
+  {
+    "path": "/hpfm/permission/range",
+    "models": [
+      "hpfm/permission"
+    ],
+    "component": "hpfm/Permission/Range"
+  },
+  {
+    "path": "/hpfm/permission/rule",
+    "models": [
+      "hpfm/permission"
+    ],
+    "component": "hpfm/Permission/Rule"
+  },
+  {
+    "path": "/hpfm/rule-engine/list",
+    "models": [
+      "hpfm/ruleEngine"
+    ],
+    "component": "hpfm/RuleEngine/List"
+  },
+  {
+    "path": "/hpfm/rule-engine/create",
+    "models": [
+      "hpfm/ruleEngine"
+    ],
+    "component": "hpfm/RuleEngine/Detail"
+  },
+  {
+    "path": "/hpfm/rule-engine/detail/",
+    "models": [
+      "hpfm/ruleEngine"
+    ],
+    "component": "hpfm/RuleEngine/Detail"
+  },
+  {
+    "path": "/hpfm/financial-code/list",
+    "models": [
+      "hpfm/financialCode"
+    ],
+    "component": "hpfm/FinancialCode"
+  },
+  {
+    "path": "/hpfm/ui/page",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/hpfm/ui/page/list",
+    "models": [
+      "hpfm/uiPage"
+    ],
+    "component": "hpfm/UI/Site/PageList"
+  },
+  {
+    "path": "/hpfm/ui/page/detail/",
+    "models": [
+      "hpfm/uiPage"
+    ],
+    "component": "hpfm/UI/Site/PageDetail"
+  },
+  {
+    "path": "/hpfm/ui/page/preview/",
+    "models": [
+      ""
+    ],
+    "component": "hpfm/UI/Site/PagePreview"
+  },
+  {
+    "path": "/hpfm/ui/page-org/list",
+    "models": [
+      "hpfm/uiPageOrg"
+    ],
+    "component": "hpfm/UI/Org/PageList"
+  },
+  {
+    "path": "/hpfm/ui/page-org/detail/",
+    "models": [
+      "hpfm/uiPageOrg"
+    ],
+    "component": "hpfm/UI/Org/PageDetail"
+  },
+  {
+    "path": "/hfile/file-upload",
+    "models": [
+      "hfile/fileUpload"
+    ],
+    "component": "hfile/FileUpload"
+  },
+  {
+    "path": "/hfile/file-aggregate",
+    "models": [
+      "hfile/fileAggregate"
+    ],
+    "component": "hfile/FileAggregate"
+  },
+  {
+    "path": "/hmsg/message-query",
+    "models": [
+      "hmsg/messageQuery"
+    ],
+    "component": "hmsg/MessageQuery"
+  },
+  {
+    "path": "/hmsg/message-template",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/hmsg/message-template/list",
+    "models": [
+      "hmsg/messageTemplate"
+    ],
+    "component": "hmsg/MessageTemplate/List"
+  },
+  {
+    "path": "/hmsg/message-template/detail/",
+    "models": [
+      "hmsg/messageTemplate"
+    ],
+    "component": "hmsg/MessageTemplate/Detail"
+  },
+  {
+    "path": "/hmsg/message-template/create",
+    "models": [
+      "hmsg/messageTemplate"
+    ],
+    "component": "hmsg/MessageTemplate/Detail"
+  },
+  {
+    "path": "/hmsg/receiver-type",
+    "models": [
+      "hmsg/receiverType"
+    ],
+    "component": "hmsg/ReceiverType"
+  },
+  {
+    "path": "/hmsg/user-message",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/hmsg/sms-config",
+    "models": [
+      "hmsg/smsConfig"
+    ],
+    "component": "hmsg/SMSConfig"
+  },
+  {
+    "path": "/hmsg/send-config/list",
+    "models": [
+      "hmsg/sendConfig"
+    ],
+    "component": "hmsg/SendConfig/List"
+  },
+  {
+    "path": "/hmsg/send-config/create",
+    "models": [
+      "hmsg/sendConfig"
+    ],
+    "component": "hmsg/SendConfig/Detail"
+  },
+  {
+    "path": "/hmsg/send-config/detail/",
+    "models": [
+      "hmsg/sendConfig"
+    ],
+    "component": "hmsg/SendConfig/Detail"
+  },
+  {
+    "path": "/hmsg/user-message/detail/",
+    "models": [
+      "hmsg/userMessage"
+    ],
+    "component": "hmsg/UserMessage/MessageDetail"
+  },
+  {
+    "path": "/hptl/notices/list",
+    "models": [
+      "hptl/notice"
+    ],
+    "component": "hptl/Notice"
+  },
+  {
+    "path": "/hptl/notices/detail/",
+    "models": [
+      "hptl/notice"
+    ],
+    "component": "hptl/Notice/NoticeDetail"
+  },
+  {
+    "path": "/hptl/portal-assign",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/hptl/portal-assign/list",
+    "models": [
+      "hptl/portalAssign"
+    ],
+    "component": "hptl/PortalAssign"
+  },
+  {
+    "path": "/hptl/portal-assign/template/",
+    "models": [
+      "hptl/portalAssign"
+    ],
+    "component": "hptl/PortalAssign/Template"
+  },
+  {
+    "path": "/hptl/portal-assign/template/edit/",
+    "models": [
+      "hptl/portalAssign",
+      "hptl/templatesConfig"
+    ],
+    "component": "hptl/PortalAssign/TemplateEdit"
+  },
+  {
+    "path": "/hptl/templates-config",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/hptl/templates-config/list",
+    "models": [
+      "hptl/templatesConfig",
+      "hpfm/group"
+    ],
+    "component": "hptl/TemplatesConfig"
+  },
+  {
+    "path": "/hptl/templates-config/edit/",
+    "models": [
+      "hptl/portalAssign",
+      "hptl/templatesConfig"
+    ],
+    "component": "hptl/TemplatesConfig/TemplateEdit"
+  },
+  {
+    "path": "/hptl/templates",
+    "models": [
+      "hptl/templates"
+    ],
+    "component": "hptl/Templates"
+  },
+  {
+    "path": "/hdtt/producer-config/list",
+    "models": [
+      "hdtt/producerConfig"
+    ],
+    "component": "hdtt/ProducerConfig"
+  },
+  {
+    "path": "/hdtt/producer-config/allocation/",
+    "models": [
+      "hdtt/producerConfig"
+    ],
+    "component": "hdtt/ProducerConfig/Allocation"
+  },
+  {
+    "path": "/hdtt/init-process",
+    "models": [
+      "hdtt/initialProcess"
+    ]
+  },
+  {
+    "path": "/hdtt/init-process/list",
+    "models": [
+      "hdtt/initialProcess"
+    ],
+    "component": "hdtt/InitialProcess/List"
+  },
+  {
+    "path": "/hdtt/init-process/detail/",
+    "models": [
+      "hdtt/initialProcess"
+    ],
+    "component": "hdtt/InitialProcess/Detail"
+  },
+  {
+    "path": "/hwfl/workflow/task/list",
+    "models": [
+      "hwfl/task"
+    ],
+    "component": "hwfl/Task/List"
+  },
+  {
+    "path": "/hwfl/workflow/task/detail/",
+    "models": [
+      "hwfl/task"
+    ],
+    "component": "hwfl/Task/Detail"
+  },
+  {
+    "path": "/hwfl/workflow/involved-task",
+    "models": [
+      "hwfl/involvedTask"
+    ]
+  },
+  {
+    "path": "/hwfl/workflow/involved-task/list",
+    "models": [
+      "hwfl/involvedTask"
+    ],
+    "component": "hwfl/InvolvedTask/List"
+  },
+  {
+    "path": "/hwfl/workflow/involved-task/detail/",
+    "models": [
+      "hwfl/involvedTask"
+    ],
+    "component": "hwfl/InvolvedTask/Detail"
+  },
+  {
+    "path": "/hwfl/workflow/carbon-copy-task",
+    "models": [
+      "hwfl/carbonCopyTask"
+    ]
+  },
+  {
+    "path": "/hwfl/workflow/carbon-copy-task/list",
+    "models": [
+      "hwfl/carbonCopyTask"
+    ],
+    "component": "hwfl/CarbonCopyTask/List"
+  },
+  {
+    "path": "/hwfl/workflow/carbon-copy-task/detail/",
+    "models": [
+      "hwfl/carbonCopyTask"
+    ],
+    "component": "hwfl/CarbonCopyTask/Detail"
+  },
+  {
+    "path": "/hwfl/workflow/monitor/list",
+    "models": [
+      "hwfl/monitor"
+    ],
+    "component": "hwfl/Monitor/List"
+  },
+  {
+    "path": "/hwfl/workflow/monitor/create",
+    "models": [
+      "hwfl/monitor"
+    ],
+    "component": "hwfl/Monitor/Detail"
+  },
+  {
+    "path": "/hwfl/workflow/monitor/detail/",
+    "models": [
+      "hwfl/monitor"
+    ],
+    "component": "hwfl/Monitor/Detail"
+  },
+  {
+    "path": "/hwfl/setting/process-define/list",
+    "models": [
+      "hwfl/processDefine"
+    ],
+    "component": "hwfl/ProcessDefine"
+  },
+  {
+    "path": "/hwfl/setting/process-define/deploy/",
+    "models": [
+      "hwfl/processDefine"
+    ],
+    "component": "hwfl/ProcessDefine/DeployHistory"
+  },
+  {
+    "path": "/hwfl/setting/condition/list",
+    "models": [
+      "hwfl/condition"
+    ],
+    "component": "hwfl/Condition/List"
+  },
+  {
+    "path": "/hwfl/setting/condition/create",
+    "models": [
+      "hwfl/condition"
+    ],
+    "component": "hwfl/Condition/Detail"
+  },
+  {
+    "path": "/hwfl/setting/condition/detail/",
+    "models": [
+      "hwfl/condition"
+    ],
+    "component": "hwfl/Condition/Detail"
+  },
+  {
+    "path": "/hwfl/setting/approve-auth/list",
+    "models": [
+      "hwfl/approveAuth"
+    ],
+    "component": "hwfl/ApproveAuth/List"
+  },
+  {
+    "path": "/hwfl/setting/approve-auth/create",
+    "models": [
+      "hwfl/approveAuth"
+    ],
+    "component": "hwfl/ApproveAuth/Detail"
+  },
+  {
+    "path": "/hwfl/setting/approve-auth/detail/",
+    "models": [
+      "hwfl/approveAuth"
+    ],
+    "component": "hwfl/ApproveAuth/Detail"
+  },
+  {
+    "path": "/hwfl/setting/approve-way/list",
+    "models": [
+      "hwfl/approveWay"
+    ],
+    "component": "hwfl/ApproveWay/List"
+  },
+  {
+    "path": "/hwfl/setting/approve-way/create",
+    "models": [
+      "hwfl/approveWay"
+    ],
+    "component": "hwfl/ApproveWay/Detail"
+  },
+  {
+    "path": "/hwfl/setting/approve-way/detail/",
+    "models": [
+      "hwfl/approveWay"
+    ],
+    "component": "hwfl/ApproveWay/Detail"
+  },
+  {
+    "path": "/hwfl/setting/approve-rule/list",
+    "models": [
+      "hwfl/approveRule"
+    ],
+    "component": "hwfl/ApproveRule/List"
+  },
+  {
+    "path": "/hwfl/setting/approve-rule/create",
+    "models": [
+      "hwfl/approveRule"
+    ],
+    "component": "hwfl/ApproveRule/Detail"
+  },
+  {
+    "path": "/hwfl/setting/approve-rule/detail/",
+    "models": [
+      "hwfl/approveRule"
+    ],
+    "component": "hwfl/ApproveRule/Detail"
+  },
+  {
+    "path": "/hwfl/setting/message-service/list",
+    "models": [
+      "hwfl/messageService"
+    ],
+    "component": "hwfl/MessageService/List"
+  },
+  {
+    "path": "/hwfl/setting/message-service/create",
+    "models": [
+      "hwfl/messageService"
+    ],
+    "component": "hwfl/MessageService/Detail"
+  },
+  {
+    "path": "/hwfl/setting/message-service/detail/",
+    "models": [
+      "hwfl/messageService"
+    ],
+    "component": "hwfl/MessageService/Detail"
+  },
+  {
+    "path": "/hwfl/setting/expression-service/list",
+    "models": [
+      "hwfl/expressionService"
+    ],
+    "component": "hwfl/ExpressionService/List"
+  },
+  {
+    "path": "/hwfl/setting/expression-service/create",
+    "models": [
+      "hwfl/expressionService"
+    ],
+    "component": "hwfl/ExpressionService/Detail"
+  },
+  {
+    "path": "/hwfl/setting/expression-service/detail/",
+    "models": [
+      "hwfl/expressionService"
+    ],
+    "component": "hwfl/ExpressionService/Detail"
+  },
+  {
+    "path": "/hwfl/setting/service-task/list",
+    "models": [
+      "hwfl/serviceTask"
+    ],
+    "component": "hwfl/ServiceTask/List"
+  },
+  {
+    "path": "/hwfl/setting/service-task/create",
+    "models": [
+      "hwfl/serviceTask"
+    ],
+    "component": "hwfl/ServiceTask/Detail"
+  },
+  {
+    "path": "/hwfl/setting/service-task/detail/",
+    "models": [
+      "hwfl/serviceTask"
+    ],
+    "component": "hwfl/ServiceTask/Detail"
+  },
+  {
+    "path": "/hwfl/workflow/start-by-task",
+    "models": [
+      "hwfl/startByTask"
+    ]
+  },
+  {
+    "path": "/hwfl/workflow/start-by-task/list",
+    "models": [
+      "hwfl/startByTask"
+    ],
+    "component": "hwfl/StartByTask/List"
+  },
+  {
+    "path": "/hwfl/workflow/start-by-task/detail/",
+    "models": [
+      "hwfl/startByTask"
+    ],
+    "component": "hwfl/StartByTask/Detail"
+  },
+  {
+    "path": "/hsdr/job-info",
+    "models": [
+      "hsdr/jobInfo"
+    ]
+  },
+  {
+    "path": "/hsdr/job-info/log/",
+    "models": [
+      "hsdr/jobLog"
+    ],
+    "component": "hsdr/JobLog"
+  },
+  {
+    "path": "/hsdr/job-info/glue/",
+    "models": [
+      "hsdr/jobInfo"
+    ],
+    "component": "hsdr/JobInfo/Glue"
+  },
+  {
+    "path": "/hsdr/concurrent/list",
+    "models": [
+      "hsdr/concurrent"
+    ],
+    "component": "hsdr/Concurrent/List"
+  },
+  {
+    "path": "/hsdr/concurrent/detail/",
+    "models": [
+      "hsdr/concurrent"
+    ],
+    "component": "hsdr/Concurrent/Detail"
+  },
+  {
+    "path": "/hsgp/node-rule/list",
+    "models": [
+      "hsgp/nodeRule"
+    ],
+    "component": "hsgp/NodeRule"
+  },
+  {
+    "path": "/hsgp/node-rule/config/",
+    "models": [
+      "hsgp/nodeRule"
+    ],
+    "component": "hsgp/NodeRule/Editor"
+  },
+  {
+    "path": "/hsgp/node-group/list",
+    "models": [
+      "hsgp/nodeGroup"
+    ],
+    "component": "hsgp/NodeGroup"
+  },
+  {
+    "path": "/hsgp/node-group/",
+    "models": [
+      "hsgp/nodeGroup"
+    ],
+    "component": "hsgp/NodeGroup/Config"
+  },
+  {
+    "path": "/hsgp/node-group/",
+    "models": [
+      "hsgp/nodeGroup"
+    ],
+    "component": "hsgp/NodeGroup/Config/AppInfo"
+  },
+  {
+    "path": "/hsgp/node-group/",
+    "models": [
+      "hsgp/nodeGroup"
+    ],
+    "component": "hsgp/NodeGroup/Config/VersionInfo"
+  },
+  {
+    "path": "/hsgp/node-group/",
+    "models": [
+      "hsgp/nodeGroup"
+    ],
+    "component": "hsgp/NodeGroup/Config/ConfigInfo"
+  },
+  {
+    "path": "/hsgp/node-group/",
+    "models": [
+      "hsgp/nodeGroup"
+    ],
+    "component": "hsgp/NodeGroup/Config/PreviewInfo"
+  },
+  {
+    "path": "/hsgp/service-collect/list",
+    "models": [
+      "hsgp/serviceCollect"
+    ],
+    "component": "hsgp/ServiceCollect"
+  },
+  {
+    "path": "/hsgp/product-collect/list",
+    "models": [
+      "hsgp/product"
+    ],
+    "component": "hsgp/Product"
+  },
+  {
+    "path": "/hsgp/product-service/list",
+    "models": [
+      "hsgp/productService"
+    ],
+    "component": "hsgp/ProductService"
+  },
+  {
+    "path": "/hsgp/product-service/topology/",
+    "models": [
+      "hsgp/productService"
+    ],
+    "component": "hsgp/ProductService/Topology"
+  },
+  {
+    "path": "/hsgp/service-route",
+    "models": [
+      "hsgp/serviceRoute"
+    ],
+    "component": "hsgp/ServiceRoute"
+  },
+  {
+    "path": "/hcnf/hystrix/list",
+    "models": [
+      "hcnf/hystrix"
+    ],
+    "component": "hcnf/Hystrix"
+  },
+  {
+    "path": "/hcnf/hystrix/detail/",
+    "models": [
+      "hcnf/hystrix"
+    ],
+    "component": "hcnf/Hystrix/Detail"
+  },
+  {
+    "path": "/hcnf/zuul-limit/list",
+    "models": [
+      "hcnf/zuulRateLimit"
+    ],
+    "component": "hcnf/ZuulRateLimit"
+  },
+  {
+    "path": "/hcnf/zuul-limit/detail/",
+    "models": [
+      "hcnf/zuulRateLimit"
+    ],
+    "component": "hcnf/ZuulRateLimit/RateLimitDetail"
+  },
+  {
+    "path": "/hitf/services",
+    "models": [
+      "hitf/services"
+    ],
+    "component": "hitf/Services"
+  },
+  {
+    "path": "/hitf/interface-logs",
+    "models": [
+      "hitf/interfaceLogs"
+    ]
+  },
+  {
+    "path": "/hitf/interface-logs/list",
+    "models": [
+      "hitf/interfaceLogs"
+    ],
+    "component": "hitf/InterfaceLogs"
+  },
+  {
+    "path": "/hitf/interface-logs/detail/",
+    "models": [
+      "hitf/interfaceLogs"
+    ],
+    "component": "hitf/InterfaceLogs/Detail"
+  },
+  {
+    "path": "/himp/template/list",
+    "models": [
+      "himp/template"
+    ],
+    "component": "himp/Template/List/index"
+  },
+  {
+    "path": "/himp/template/detail/",
+    "models": [
+      "himp/template"
+    ],
+    "component": "himp/Template/Detail/index"
+  },
+  {
+    "path": "/himp/template/column/",
+    "models": [
+      "himp/template"
+    ],
+    "component": "himp/Template/Detail/Column/index"
+  },
+  {
+    "path": "/hrpt/data-set/list",
+    "models": [
+      "hrpt/dataSet"
+    ],
+    "component": "hrpt/DataSet/List"
+  },
+  {
+    "path": "/hrpt/data-set/create",
+    "models": [
+      "hrpt/dataSet"
+    ],
+    "component": "hrpt/DataSet/Detail"
+  },
+  {
+    "path": "/hrpt/data-set/detail/",
+    "models": [
+      "hrpt/dataSet"
+    ],
+    "component": "hrpt/DataSet/Detail"
+  },
+  {
+    "path": "/hrpt/report-definition/list",
+    "models": [
+      "hrpt/reportDefinition"
+    ],
+    "component": "hrpt/ReportDefinition/List"
+  },
+  {
+    "path": "/hrpt/report-definition/create",
+    "models": [
+      "hrpt/reportDefinition"
+    ],
+    "component": "hrpt/ReportDefinition/Detail"
+  },
+  {
+    "path": "/hrpt/report-definition/detail/",
+    "models": [
+      "hrpt/reportDefinition"
+    ],
+    "component": "hrpt/ReportDefinition/Detail"
+  },
+  {
+    "path": "/hrpt/template-manage/list",
+    "models": [
+      "hrpt/templateManage"
+    ],
+    "component": "hrpt/TemplateManage/List"
+  },
+  {
+    "path": "/hrpt/template-manage/create",
+    "models": [
+      "hrpt/templateManage"
+    ],
+    "component": "hrpt/TemplateManage/Detail"
+  },
+  {
+    "path": "/hrpt/template-manage/detail/",
+    "models": [
+      "hrpt/templateManage"
+    ],
+    "component": "hrpt/TemplateManage/Detail"
+  },
+  {
+    "path": "/hrpt/report-query/list",
+    "models": [
+      "hrpt/reportQuery"
+    ],
+    "component": "hrpt/ReportQuery/List"
+  },
+  {
+    "path": "/hrpt/report-query/detail/",
+    "models": [
+      "hrpt/reportQuery"
+    ],
+    "component": "hrpt/ReportQuery/Detail"
+  },
+  {
+    "path": "/smdm/purchase/category",
+    "models": [
+      "smdm/purchaseCategory"
+    ]
+  },
+  {
+    "path": "/smdm/purchase/category/list",
+    "models": [
+      "smdm/purchaseCategory"
+    ],
+    "component": "smdm/PurchaseCategory"
+  },
+  {
+    "path": "/smdm/purchase/category/template/",
+    "models": [
+      "smdm/purchaseCategory"
+    ],
+    "component": "smdm/PurchaseCategory/Template"
+  },
+  {
+    "path": "/smdm/bank-org",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/smdm/bank-org/list",
+    "models": [
+      "smdm/bankTenant"
+    ],
+    "component": "smdm/BankTenant"
+  },
+  {
+    "path": "/smdm/bank-org/branch/",
+    "models": [
+      "smdm/bankTenant"
+    ],
+    "component": "smdm/BankTenant/BankTenantBranch"
+  },
+  {
+    "path": "/smdm/tax-rate-org",
+    "models": [
+      "smdm/taxRateOrg"
+    ],
+    "component": "smdm/TaxRateOrg"
+  },
+  {
+    "path": "/smdm/currency-org",
+    "models": [
+      "smdm/currencyOrg"
+    ],
+    "component": "smdm/CurrencyOrg"
+  },
+  {
+    "path": "/smdm/payment-type",
+    "models": [
+      "smdm/paymentType"
+    ],
+    "component": "smdm/PaymentType"
+  },
+  {
+    "path": "/smdm/payment-usages",
+    "models": [
+      "smdm/paymentUsages"
+    ],
+    "component": "smdm/PaymentUsages/PaymentUsages"
+  },
+  {
+    "path": "/smdm/payment-terms",
+    "models": [
+      "smdm/paymentTerms"
+    ],
+    "component": "smdm/PaymentTerms/PaymentTerms"
+  },
+  {
+    "path": "/smdm/uom-org",
+    "models": [
+      "smdm/uomOrg"
+    ],
+    "component": "smdm/UomOrg"
+  },
+  {
+    "path": "/smdm/period-org",
+    "models": [
+      "smdm/periodOrg"
+    ],
+    "component": "smdm/PeriodOrg"
+  },
+  {
+    "path": "/smdm/ledger",
+    "models": [
+      "smdm/ledger"
+    ],
+    "component": "smdm/Ledger"
+  },
+  {
+    "path": "/smdm/materiel/list",
+    "models": [
+      "smdm/materiel"
+    ],
+    "component": "smdm/Materiel"
+  },
+  {
+    "path": "/smdm/materiel/detail/",
+    "models": [
+      "smdm/materiel"
+    ],
+    "component": "smdm/Materiel/Detail"
+  },
+  {
+    "path": "/smdm/materiel/create",
+    "models": [
+      "smdm/materiel"
+    ],
+    "component": "smdm/Materiel/Detail"
+  },
+  {
+    "path": "/smdm/rate-type-org",
+    "models": [
+      "smdm/rateTypeOrg"
+    ],
+    "component": "smdm/RateTypeOrg"
+  },
+  {
+    "path": "/smdm/calendar",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/smdm/calendar/list",
+    "models": [
+      "smdm/calendarOrg"
+    ],
+    "component": "smdm/Calendar/List"
+  },
+  {
+    "path": "/smdm/calendar/detail/",
+    "models": [
+      "smdm/calendarOrg"
+    ],
+    "component": "smdm/Calendar/Detail"
+  },
+  {
+    "path": "/spfm/org-info",
+    "models": [
+      "hpfm/group"
+    ],
+    "component": "hpfm/OrgInfo"
+  },
+  {
+    "path": "/spfm/org-info/group",
+    "models": [
+      "hpfm/group"
+    ],
+    "component": "hpfm/OrgInfo/Group"
+  },
+  {
+    "path": "/spfm/org-info/company",
+    "models": [
+      "spfm/company",
+      "spfm/enterprise/enterpriseEdit",
+      "spfm/enterprise/legal",
+      "spfm/enterprise/business",
+      "spfm/enterprise/contactPerson",
+      "spfm/enterprise/address",
+      "spfm/enterprise/bank",
+      "spfm/enterprise/financeInfo",
+      "spfm/enterprise/attachment",
+      ""
+    ],
+    "component": "spfm/Company"
+  },
+  {
+    "path": "/spfm/org-info/purchase-org",
+    "models": [
+      "hpfm/purchaseOrg"
+    ],
+    "component": "hpfm/OrgInfo/PurchaseOrg"
+  },
+  {
+    "path": "/spfm/org-info/store-room",
+    "models": [
+      "hpfm/storeRoom"
+    ],
+    "component": "hpfm/OrgInfo/StoreRoom"
+  },
+  {
+    "path": "/spfm/org-info/operation-unit",
+    "models": [
+      "hpfm/operationUnit"
+    ],
+    "component": "hpfm/OrgInfo/OperationUnit"
+  },
+  {
+    "path": "/spfm/org-info/inventory-org",
+    "models": [
+      "hpfm/inventoryOrg"
+    ],
+    "component": "hpfm/OrgInfo/InventoryOrg"
+  },
+  {
+    "path": "/spfm/org-info/purchase-agent",
+    "models": [
+      "hpfm/purchaseAgent"
+    ],
+    "component": "hpfm/OrgInfo/PurchaseAgent"
+  },
+  {
+    "path": "/spfm/org-info/library-position",
+    "models": [
+      "hpfm/libraryPosition"
+    ],
+    "component": "hpfm/OrgInfo/LibraryPosition"
+  },
+  {
+    "path": "/spfm/purchase-order",
+    "models": [
+      "spfm/purchaseOrder"
+    ],
+    "component": "spfm/PurchaseOrder"
+  },
+  {
+    "path": "/spfm/event/list",
+    "models": [
+      "spfm/event"
+    ],
+    "component": "spfm/Event"
+  },
+  {
+    "path": "/spfm/event-org/list",
+    "models": [
+      "spfm/event"
+    ],
+    "component": "spfm/Event"
+  },
+  {
+    "path": "/spfm/enterprise/edit",
+    "models": [
+      "spfm/enterprise/enterpriseEdit",
+      "spfm/enterprise/legal",
+      "spfm/enterprise/business",
+      "spfm/enterprise/contactPerson",
+      "spfm/enterprise/address",
+      "spfm/enterprise/bank",
+      "spfm/enterprise/financeInfo",
+      "spfm/enterprise/attachment",
+      ""
+    ],
+    "component": "spfm/Enterprise/EnterpriseEdit"
+  },
+  {
+    "path": "/spfm/enterprise/register",
+    "models": [
+      ""
+    ],
+    "component": "spfm/Enterprise/Register"
+  },
+  {
+    "path": "/spfm/enterprise/register/legal",
+    "models": [
+      "spfm/enterprise/legal"
+    ],
+    "component": "spfm/Enterprise/Register/LegalInfo"
+  },
+  {
+    "path": "/spfm/enterprise/register/business",
+    "models": [
+      "spfm/enterprise/business"
+    ],
+    "component": "spfm/Enterprise/Register/BusinessInfo"
+  },
+  {
+    "path": "/spfm/enterprise/register/contact",
+    "models": [
+      "spfm/enterprise/contactPerson"
+    ],
+    "component": "spfm/Enterprise/Register/ContactPerson"
+  },
+  {
+    "path": "/spfm/enterprise/register/address",
+    "models": [
+      "spfm/enterprise/address"
+    ],
+    "component": "spfm/Enterprise/Register/AddressInfo"
+  },
+  {
+    "path": "/spfm/enterprise/register/bank",
+    "models": [
+      "spfm/enterprise/bank"
+    ],
+    "component": "spfm/Enterprise/Register/BankInfo"
+  },
+  {
+    "path": "/spfm/enterprise/register/invoice",
+    "models": [
+      "spfm/enterprise/invoiceInfo"
+    ],
+    "component": "spfm/Enterprise/Register/InvoiceInfo"
+  },
+  {
+    "path": "/spfm/enterprise/register/finance",
+    "models": [
+      "spfm/enterprise/financeInfo"
+    ],
+    "component": "spfm/Enterprise/Register/FinanceInfo"
+  },
+  {
+    "path": "/spfm/enterprise/register/attachment",
+    "models": [
+      "spfm/enterprise/attachment"
+    ],
+    "component": "spfm/Enterprise/Register/AttachmentInfo"
+  },
+  {
+    "path": "/spfm/enterprise/register/result",
+    "models": [
+      ""
+    ],
+    "component": "spfm/Enterprise/Register/ProcessInfo"
+  },
+  {
+    "path": "/spfm/certification-approval",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/spfm/certification-approval/list",
+    "models": [
+      "spfm/enterprise/approval"
+    ],
+    "component": "spfm/Enterprise/Approval/List"
+  },
+  {
+    "path": "/spfm/certification-approval/detail/",
+    "models": [
+      "spfm/enterprise/approval"
+    ],
+    "component": "spfm/Enterprise/Approval/Detail"
+  },
+  {
+    "path": "/spfm/partner-list/supplier",
+    "models": [
+      "spfm/supplier"
+    ],
+    "component": "spfm/PartnerList/Supplier"
+  },
+  {
+    "path": "/spfm/partner-list/customer",
+    "models": [
+      "spfm/customer"
+    ],
+    "component": "spfm/PartnerList/Customer"
+  },
+  {
+    "path": "/spfm/import-erp",
+    "models": [
+      "spfm/importErp"
+    ],
+    "component": "spfm/PartnerList/ImportErp"
+  },
+  {
+    "path": "/spfm/invitation-list",
+    "models": [
+      "spfm/invitationList"
+    ],
+    "component": "spfm/InvitationList"
+  },
+  {
+    "path": "/spfm/dispose-invite/",
+    "models": [
+      "spfm/disposeInvite",
+      "hmsg/userMessage"
+    ],
+    "component": "spfm/Invitation"
+  },
+  {
+    "path": "/spfm/business-apv-method",
+    "models": [
+      "spfm/businessApvMethod"
+    ],
+    "component": "spfm/BusinessApvMethod"
+  },
+  {
+    "path": "/spfm/partnership",
+    "models": [
+      "spfm/partnership"
+    ],
+    "component": "spfm/Partnership"
+  },
+  {
+    "path": "/spfm/investigation-template-define/list",
+    "models": [
+      "spfm/investigationTemDefineSite"
+    ],
+    "component": "spfm/Investigation/Template/List"
+  },
+  {
+    "path": "/spfm/investigation-template-define/detail/",
+    "models": [
+      "spfm/investigationDefinitionSite"
+    ],
+    "component": "spfm/Investigation/Template/Detail"
+  },
+  {
+    "path": "/spfm/message-receiver-setting",
+    "models": [
+      "spfm/messageSendConfig"
+    ],
+    "component": "spfm/MessageSendConfig"
+  },
+  {
+    "path": "/sslm/investigation/list",
+    "models": [
+      "sslm/investigationCreate"
+    ],
+    "component": "sslm/Investigation/Define/List"
+  },
+  {
+    "path": "/sslm/investigation/detail",
+    "models": [
+      "sslm/investigationDetailMaintain"
+    ],
+    "component": "sslm/Investigation/Define/Detail"
+  },
+  {
+    "path": "/sslm/investigation/create",
+    "models": [
+      "sslm/investigationMaintain"
+    ],
+    "component": "sslm/Investigation/Define/Create"
+  },
+  {
+    "path": "/sslm/investigation-write",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sslm/investigation-write/list",
+    "models": [
+      "sslm/investigationWrite"
+    ],
+    "component": "sslm/Investigation/Write"
+  },
+  {
+    "path": "/sslm/investigation-write/detail",
+    "models": [
+      "sslm/investigationWrite"
+    ],
+    "component": "sslm/Investigation/Write/Detail"
+  },
+  {
+    "path": "/sslm/score-tmpl",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sslm/score-tmpl/list",
+    "models": [
+      "sslm/scoreTmpl"
+    ],
+    "component": "sslm/ScoreTmpl"
+  },
+  {
+    "path": "/sslm/score-tmpl/score-indic",
+    "models": [
+      "sslm/scoreIndic"
+    ],
+    "component": "sslm/ScoreTmpl/ScoreIndic"
+  },
+  {
+    "path": "/sslm/score-tmpl/score-indic-assign",
+    "models": [
+      "sslm/scoreIndicAssign"
+    ],
+    "component": "sslm/ScoreTmpl/ScoreIndic/ScoreIndicAssign"
+  },
+  {
+    "path": "/sslm/score-tmpl/score-category",
+    "models": [
+      "sslm/scoreCategory"
+    ],
+    "component": "sslm/ScoreTmpl/ScoreCategory"
+  },
+  {
+    "path": "/sslm/score-tmpl/score-level",
+    "models": [
+      "sslm/scoreLevel"
+    ],
+    "component": "sslm/ScoreTmpl/ScoreLevel"
+  },
+  {
+    "path": "/sslm/score-tmpl/score-supplier",
+    "models": [
+      "sslm/scoreSupplier"
+    ],
+    "component": "sslm/ScoreTmpl/ScoreSupplier"
+  },
+  {
+    "path": "/sslm/standard-tmpl",
+    "models": [
+      "sslm/standardTmpl"
+    ],
+    "component": "sslm/StandardTmpl"
+  },
+  {
+    "path": "/sslm/investigation-approval",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sslm/investigation-approval/list",
+    "models": [
+      "sslm/investigationApproval"
+    ],
+    "component": "sslm/Investigation/Approval"
+  },
+  {
+    "path": "/sslm/investigation-approval/detail",
+    "models": [
+      "sslm/investigationApproval",
+      "sslm/operatingRecord"
+    ],
+    "component": "sslm/Investigation/Approval/Detail"
+  },
+  {
+    "path": "/sslm/investigation-received",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sslm/investigation-received/list",
+    "models": [
+      "sslm/investigationReceived"
+    ],
+    "component": "sslm/Investigation/Received"
+  },
+  {
+    "path": "/sslm/investigation-received/detail",
+    "models": [
+      "sslm/investigationReceived",
+      "sslm/investigationApproval",
+      "sslm/operatingRecord"
+    ],
+    "component": "sslm/Investigation/Received/Detail"
+  },
+  {
+    "path": "/sslm/investigation-send",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sslm/investigation-send/list",
+    "models": [
+      "sslm/sendInvestigation"
+    ],
+    "component": "sslm/Investigation/SendInvestigation"
+  },
+  {
+    "path": "/sslm/investigation-send/detail",
+    "models": [
+      "sslm/sendInvestigation",
+      "sslm/investigationApproval",
+      "sslm/operatingRecord"
+    ],
+    "component": "sslm/Investigation/SendInvestigation/Detail"
+  },
+  {
+    "path": "/sslm/investigation-template-define/list",
+    "models": [
+      "sslm/investigationTemDefineOrg"
+    ],
+    "component": "sslm/Investigation/Template/List"
+  },
+  {
+    "path": "/sslm/investigation-template-define/detail/",
+    "models": [
+      "sslm/investigationDefinitionOrg"
+    ],
+    "component": "sslm/Investigation/Template/Detail"
+  },
+  {
+    "path": "/sslm/investigation-template-history",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sslm/investigation-template-history/list",
+    "models": [
+      "sslm/investigationTemHistoryOrg"
+    ],
+    "component": "sslm/Investigation/TemplateHistory/List"
+  },
+  {
+    "path": "/sslm/investigation-template-history/detail/",
+    "models": [
+      "sslm/investigationTemHistoryDetailOrg"
+    ],
+    "component": "sslm/Investigation/TemplateHistory/Detail"
+  },
+  {
+    "path": "/sslm/supplier-category-alter-list",
+    "models": [
+      "sslm/supplierCategoryAlterList"
+    ]
+  },
+  {
+    "path": "/sslm/supplier-manager/list",
+    "models": [
+      "sslm/supplierQuery"
+    ],
+    "component": "sslm/SupplierManage/SupplierQuery/PlatformIndex"
+  },
+  {
+    "path": "/sslm/supplier-life-manage/manage",
+    "models": [
+      "sslm/supplierLifeManage"
+    ],
+    "component": "sslm/SupplierLife/Manage"
+  },
+  {
+    "path": "/sslm/supplier-life-manage/stage/",
+    "models": [
+      "sslm/supplierLifeSearch"
+    ],
+    "component": "sslm/SupplierLife/Search"
+  },
+  {
+    "path": "/sslm/supplier-life-manage/register-view",
+    "models": [
+      "sslm/registerApplication",
+      "sslm/commonApplication"
+    ],
+    "component": "sslm/SupplierLife/Register"
+  },
+  {
+    "path": "/sslm/supplier-life-manage/recommend-view",
+    "models": [
+      "sslm/recommendApplication",
+      "sslm/commonApplication"
+    ],
+    "component": "sslm/SupplierLife/Recommend"
+  },
+  {
+    "path": "/sslm/supplier-life-manage/potential-view",
+    "models": [
+      "sslm/potentialApplication",
+      "sslm/commonApplication"
+    ],
+    "component": "sslm/SupplierLife/Potential"
+  },
+  {
+    "path": "/sslm/supplier-life-manage/qualified-view",
+    "models": [
+      "sslm/qualifiedApplication",
+      "sslm/commonApplication"
+    ],
+    "component": "sslm/SupplierLife/Qualified"
+  },
+  {
+    "path": "/sslm/supplier-life-manage/eliminate-view",
+    "models": [
+      "sslm/eliminateApplication",
+      "sslm/commonApplication"
+    ],
+    "component": "sslm/SupplierLife/Eliminate"
+  },
+  {
+    "path": "/sslm/supplier-life-manage/prepare-view",
+    "models": [
+      "sslm/prepareApplication",
+      "sslm/commonApplication"
+    ],
+    "component": "sslm/SupplierLife/Prepare"
+  },
+  {
+    "path": "/sslm/eligible-supplier-review/list",
+    "models": [
+      "sslm/supplierReview"
+    ],
+    "component": "sslm/EligibleSupplierReview/index"
+  },
+  {
+    "path": "/sslm/eligible-supplier-review/detail/",
+    "models": [
+      "sslm/supplierReview"
+    ],
+    "component": "sslm/EligibleSupplierReview/Detail"
+  },
+  {
+    "path": "/sslm/supplier-ablility-definition/list",
+    "models": [
+      "sslm/supplyAbility"
+    ],
+    "component": "sslm/SupplyAbility/Definition/index"
+  },
+  {
+    "path": "/sslm/supplier-ablility-definition/create",
+    "models": [
+      "sslm/supplyAbility"
+    ],
+    "component": "sslm/SupplyAbility/Definition/Detail"
+  },
+  {
+    "path": "/sslm/supplier-ablility-definition/detail/",
+    "models": [
+      "sslm/supplyAbility"
+    ],
+    "component": "sslm/SupplyAbility/Definition/Detail"
+  },
+  {
+    "path": "/sslm/supplier-ablility-review/list",
+    "models": [
+      "sslm/supplyAbility"
+    ],
+    "component": "sslm/SupplyAbility/Review/index"
+  },
+  {
+    "path": "/sslm/supplier-ablility-review/detail/",
+    "models": [
+      "sslm/supplyAbility"
+    ],
+    "component": "sslm/SupplyAbility/Review/Detail"
+  },
+  {
+    "path": "/sslm/supplier-ablility-query/list",
+    "models": [
+      "sslm/supplyAbility"
+    ],
+    "component": "sslm/SupplyAbility/Query/index"
+  },
+  {
+    "path": "/sslm/supplier-ablility-query/detail/",
+    "models": [
+      "sslm/supplyAbility"
+    ],
+    "component": "sslm/SupplyAbility/Query/Detail"
+  },
+  {
+    "path": "/sslm/evaluation-template/list",
+    "models": [
+      "sslm/evaluationTemplate"
+    ],
+    "component": "sslm/EvaluationTemplate"
+  },
+  {
+    "path": "/sslm/evaluation-template/indicators/",
+    "models": [
+      "sslm/evaluationTemplate"
+    ],
+    "component": "sslm/EvaluationTemplate/Indicator"
+  },
+  {
+    "path": "/sslm/evaluation-template/score-level/",
+    "models": [
+      "sslm/evaluationScoreLevel"
+    ],
+    "component": "sslm/EvaluationTemplate/ScoreLevel/index"
+  },
+  {
+    "path": "/sslm/evaluation-template/purchase-category/",
+    "models": [
+      "sslm/evaluationPurchaseCate"
+    ],
+    "component": "sslm/EvaluationTemplate/PurchaseCategory/index"
+  },
+  {
+    "path": "/sslm/archive-filling/list",
+    "models": [
+      "sslm/evaluationArchivesFilling"
+    ],
+    "component": "sslm/EvaluationArchivesFilling"
+  },
+  {
+    "path": "/sslm/archive-filling/detail/",
+    "models": [
+      "sslm/evaluationArchivesFilling"
+    ],
+    "component": "sslm/EvaluationArchivesFilling/Detail"
+  },
+  {
+    "path": "/sslm/archive-filled/list",
+    "models": [
+      "sslm/evaluationArchivesFilled"
+    ],
+    "component": "sslm/EvaluationArchivesFilled"
+  },
+  {
+    "path": "/sslm/archive-filled/detail/",
+    "models": [
+      "sslm/evaluationArchivesFilled"
+    ],
+    "component": "sslm/EvaluationArchivesFilled/Detail"
+  },
+  {
+    "path": "/sslm/evaluation-query/list",
+    "models": [
+      "sslm/evaluationQuery"
+    ],
+    "component": "sslm/EvaluationQuery"
+  },
+  {
+    "path": "/sslm/evaluation-query/detail/",
+    "models": [
+      "sslm/evaluationQuery"
+    ],
+    "component": "sslm/EvaluationQuery/Detail"
+  },
+  {
+    "path": "/sslm/received-query/list",
+    "models": [
+      "sslm/receivedEvaluationResult"
+    ],
+    "component": "sslm/ReceivedEvaluationResult"
+  },
+  {
+    "path": "/sslm/received-query/detail/",
+    "models": [
+      "sslm/receivedEvaluationResult"
+    ],
+    "component": "sslm/ReceivedEvaluationResult/Detail"
+  },
+  {
+    "path": "/sslm/evaluation-doc-manage/list",
+    "models": [
+      "sslm/evaluationDocManage"
+    ],
+    "component": "sslm/EvaluationDocManage"
+  },
+  {
+    "path": "/sslm/evaluation-doc-manage/create",
+    "models": [
+      "sslm/evaluationDocManage"
+    ],
+    "component": "sslm/EvaluationDocManage/Detail"
+  },
+  {
+    "path": "/sslm/evaluation-doc-manage/detail/",
+    "models": [
+      "sslm/evaluationDocManage"
+    ],
+    "component": "sslm/EvaluationDocManage/Detail"
+  },
+  {
+    "path": "/sitf/interface-def",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sitf/interface-def/list",
+    "models": [
+      "sitf/interfaceDef"
+    ],
+    "component": "sitf/InterfaceDef/Platform"
+  },
+  {
+    "path": "/sitf/interface-def-org",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sitf/interface-def-org/list",
+    "models": [
+      "sitf/interfaceDefOrg"
+    ],
+    "component": "sitf/InterfaceDef/Tenant/TenantIndex"
+  },
+  {
+    "path": "/sitf/interface-cate-def",
+    "models": [
+      "sitf/interfaceCateDef"
+    ],
+    "component": "sitf/InterfaceCateDef/Platform"
+  },
+  {
+    "path": "/sitf/product-def",
+    "models": [
+      "sitf/productDef"
+    ],
+    "component": "sitf/ProductDef"
+  },
+  {
+    "path": "/sitf/application-group-def",
+    "models": [
+      "sitf/applicationGroupDef"
+    ],
+    "component": "sitf/ApplicationGroupDef"
+  },
+  {
+    "path": "/sitf/message-queue-pro-def",
+    "models": [
+      "sitf/messageQueueProDef"
+    ],
+    "component": "sitf/MessageQueueProDef"
+  },
+  {
+    "path": "/sitf/front-computer-def",
+    "models": [
+      "sitf/frontComputerDef"
+    ],
+    "component": "sitf/FrontComputerDef"
+  },
+  {
+    "path": "/sitf/processor-monitor",
+    "models": [
+      "sitf/processorMonitor"
+    ],
+    "component": "sitf/ProcessorMonitor"
+  },
+  {
+    "path": "/sitf/sourcedata-search/list",
+    "models": [
+      "sitf/sourceDataSearch"
+    ],
+    "component": "sitf/SourceDataSearch"
+  },
+  {
+    "path": "/sitf/sourcedata-search/detail",
+    "models": [
+      "sitf/sourceDataSearch"
+    ],
+    "component": "sitf/SourceDataSearch/SourceDataDetail"
+  },
+  {
+    "path": "/sitf/sourcedata-search-org/list",
+    "models": [
+      "sitf/sourceDataSearchOrg"
+    ],
+    "component": "sitf/SourceDataSearchOrg"
+  },
+  {
+    "path": "/sitf/sourcedata-search-org/detail",
+    "models": [
+      "sitf/sourceDataSearchOrg"
+    ],
+    "component": "sitf/SourceDataSearchOrg/SourceDataDetail"
+  },
+  {
+    "path": "/sitf/interface-packet-monitor-org",
+    "models": [
+      "sitf/packetMonitorOrg"
+    ],
+    "component": "sitf/PacketMonitor/Platform"
+  },
+  {
+    "path": "/sodr/order-type/list",
+    "models": [
+      "sodr/orderTypeOrg"
+    ],
+    "component": "sodr/OrderType"
+  },
+  {
+    "path": "/sodr/send-order",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sodr/send-order/list",
+    "models": [
+      "sodr/sendOrder"
+    ],
+    "component": "sodr/SendOrder"
+  },
+  {
+    "path": "/sodr/send-order/detail/",
+    "models": [
+      "sodr/sendOrder"
+    ],
+    "component": "sodr/SendOrder/Detail"
+  },
+  {
+    "path": "/sodr/received-order",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sodr/received-order/list",
+    "models": [
+      "sodr/receivedOrder"
+    ],
+    "component": "sodr/ReceivedOrder"
+  },
+  {
+    "path": "/sodr/received-order/detail/",
+    "models": [
+      "sodr/receivedOrder"
+    ],
+    "component": "sodr/ReceivedOrder/Detail"
+  },
+  {
+    "path": "/sodr/confirm-order",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sodr/confirm-order/list",
+    "models": [
+      "sodr/confirmOrder"
+    ],
+    "component": "sodr/ConfirmOrder"
+  },
+  {
+    "path": "/sodr/confirm-order/detail/",
+    "models": [
+      "sodr/confirmOrder"
+    ],
+    "component": "sodr/ConfirmOrder/Detail"
+  },
+  {
+    "path": "/sodr/delivery-date-review",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sodr/delivery-date-review/list",
+    "models": [
+      "sodr/deliveryDateReview"
+    ],
+    "component": "sodr/DeliveryDateReview"
+  },
+  {
+    "path": "/sodr/delivery-date-review/detail/",
+    "models": [
+      "sodr/deliveryDateReview"
+    ],
+    "component": "sodr/DeliveryDateReview/Detail"
+  },
+  {
+    "path": "/sodr/order-approval",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sodr/order-approval/list",
+    "models": [
+      "sodr/orderApproval"
+    ],
+    "component": "sodr/OrderApproval"
+  },
+  {
+    "path": "/sodr/order-approval/detail/",
+    "models": [
+      "sodr/orderApproval"
+    ],
+    "component": "sodr/OrderApproval/Detail"
+  },
+  {
+    "path": "/sodr/order-release",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sodr/order-release/list",
+    "models": [
+      "sodr/orderRelease"
+    ],
+    "component": "sodr/OrderRelease"
+  },
+  {
+    "path": "/sodr/order-release/detail/",
+    "models": [
+      "sodr/orderRelease"
+    ],
+    "component": "sodr/OrderRelease/Detail"
+  },
+  {
+    "path": "/sodr/write-off/list",
+    "models": [
+      "sodr/writeOff"
+    ],
+    "component": "sodr/WriteOff"
+  },
+  {
+    "path": "/sodr/write-off/detail",
+    "models": [
+      "sodr/writeOff"
+    ],
+    "component": "sodr/WriteOff/Detail"
+  },
+  {
+    "path": "/sodr/order-cancel",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sodr/order-cancel/list",
+    "models": [
+      "sodr/orderCancel"
+    ],
+    "component": "sodr/OrderCancel"
+  },
+  {
+    "path": "/sodr/order-cancel/detail/",
+    "models": [
+      "sodr/sendOrder",
+      "sodr/orderCancel"
+    ],
+    "component": "sodr/SendOrder/Detail"
+  },
+  {
+    "path": "/sodr/purchase-order-maintain/list",
+    "models": [
+      "sodr/orderMaintenanceEntry"
+    ],
+    "component": "sodr/OrderMaintenanceEntry"
+  },
+  {
+    "path": "/sodr/purchase-order-maintain/quote-purchase-requisition/detail/",
+    "models": [
+      "sprm/purchaseRequisitionInquiry"
+    ],
+    "component": "sprm/PurchaseRequisitionInquiry/NotErpDetail"
+  },
+  {
+    "path": "/sfin/bill-create/list",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Create"
+  },
+  {
+    "path": "/sfin/bill-create/detail/",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Create/NoConsignmentSale/Detail"
+  },
+  {
+    "path": "/sfin/bill-audit/list",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Audit"
+  },
+  {
+    "path": "/sfin/bill-audit/detail/",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Audit/Detail"
+  },
+  {
+    "path": "/sfin/purchase-bill/list",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Purchase"
+  },
+  {
+    "path": "/sfin/purchase-bill/detail/",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Purchase/Detail"
+  },
+  {
+    "path": "/sfin/bill-maintain/list",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Maintain"
+  },
+  {
+    "path": "/sfin/bill-maintain/detail/",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Maintain/NoConsignment/Detail"
+  },
+  {
+    "path": "/sfin/cancel-bill/list",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Cancel"
+  },
+  {
+    "path": "/sfin/sales-bill/list",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Sales"
+  },
+  {
+    "path": "/sfin/sales-bill/detail/",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Sales/NonPerformance/Detail"
+  },
+  {
+    "path": "/sfin/sales-bill/maintainDetail/",
+    "models": [
+      "sfin/bill"
+    ],
+    "component": "sfin/Bill/Create/NoConsignmentSale/Detail"
+  },
+  {
+    "path": "/sfin/invoice-create/list",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Create"
+  },
+  {
+    "path": "/sfin/invoice-create/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Create/Detail"
+  },
+  {
+    "path": "/sfin/invoice-update/list",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Update"
+  },
+  {
+    "path": "/sfin/invoice-update/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Update/Detail"
+  },
+  {
+    "path": "/sfin/invoice-supplier/list",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Supplier"
+  },
+  {
+    "path": "/sfin/invoice-supplier/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Supplier/Detail"
+  },
+  {
+    "path": "/sfin/invoice-supplier/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Update/Detail"
+  },
+  {
+    "path": "/sfin/invoice-approve/list",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Approve"
+  },
+  {
+    "path": "/sfin/invoice-approve/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Approve/Detail"
+  },
+  {
+    "path": "/sfin/invoice-review/list",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Review"
+  },
+  {
+    "path": "/sfin/invoice-review/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Review/Detail"
+  },
+  {
+    "path": "/sfin/invoice-sync/list",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Sync"
+  },
+  {
+    "path": "/sfin/invoice-sync/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Sync/Detail"
+  },
+  {
+    "path": "/sfin/invoice-return/list",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Return"
+  },
+  {
+    "path": "/sfin/invoice-return/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Return/Detail"
+  },
+  {
+    "path": "/sfin/invoice-summary/list",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Summary"
+  },
+  {
+    "path": "/sfin/invoice-summary/detail/",
+    "models": [
+      "sfin/invoice"
+    ],
+    "component": "sfin/Invoice/Summary/Detail"
+  },
+  {
+    "path": "/sfin/payable-invoice-apply/list",
+    "models": [
+      "sfin/payableInvoice"
+    ],
+    "component": "sfin/PayableInvoice/Apply"
+  },
+  {
+    "path": "/sfin/payable-invoice-apply/order-detail/",
+    "models": [
+      "sfin/payableInvoice"
+    ],
+    "component": "sfin/PayableInvoice/Apply/Detail/OrderDetail"
+  },
+  {
+    "path": "/sfin/payable-invoice-maintain/list",
+    "models": [
+      "sfin/payableInvoice"
+    ],
+    "component": "sfin/PayableInvoice/Maintain"
+  },
+  {
+    "path": "/sfin/payable-invoice-maintain/read-only-centralized-detail/",
+    "models": [
+      "sfin/payableInvoice",
+      "sfin/invoice"
+    ],
+    "component": "sfin/PayableInvoice/Apply/Detail/Centralized"
+  },
+  {
+    "path": "/sfin/payable-invoice-maintain/read-only-followGoodsDetail/",
+    "models": [
+      "sfin/payableInvoice",
+      "sfin/invoice"
+    ],
+    "component": "sfin/PayableInvoice/Apply/Detail/FollowGoods"
+  },
+  {
+    "path": "/sinv/supplier-delivery/list",
+    "models": [
+      "sinv/supplierDelivery"
+    ],
+    "component": "sinv/SupplierDelivery"
+  },
+  {
+    "path": "/sinv/supplier-delivery/detail/",
+    "models": [
+      "sinv/supplierDelivery"
+    ],
+    "component": "sinv/SupplierDelivery/Detail"
+  },
+  {
+    "path": "/sinv/delivery-approved",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sinv/delivery-approved/list",
+    "models": [
+      "sinv/deliveryApproved"
+    ],
+    "component": "sinv/DeliveryApproved"
+  },
+  {
+    "path": "/sinv/delivery-approved/detail/",
+    "models": [
+      "sinv/deliveryApproved"
+    ],
+    "component": "sinv/DeliveryApproved/Detail"
+  },
+  {
+    "path": "/sinv/delivery-review",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sinv/delivery-review/list",
+    "models": [
+      "sinv/deliveryReview"
+    ],
+    "component": "sinv/DeliveryReview"
+  },
+  {
+    "path": "/sinv/delivery-review/detail/",
+    "models": [
+      "sinv/deliveryReview"
+    ],
+    "component": "sinv/DeliveryReview/Detail"
+  },
+  {
+    "path": "/sinv/delivery-cancelled",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sinv/delivery-cancelled/list",
+    "models": [
+      "sinv/deliveryCancelled"
+    ],
+    "component": "sinv/DeliveryCancelled"
+  },
+  {
+    "path": "/sinv/delivery-cancelled/detail/",
+    "models": [
+      "sinv/deliveryCancelled"
+    ],
+    "component": "sinv/DeliveryCancelled/Detail"
+  },
+  {
+    "path": "/sinv/delivery-closed",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/sinv/delivery-closed/list",
+    "models": [
+      "sinv/deliveryClosed"
+    ],
+    "component": "sinv/DeliveryClosed"
+  },
+  {
+    "path": "/sinv/delivery-closed/detail/",
+    "models": [
+      "sinv/deliveryClosed"
+    ],
+    "component": "sinv/DeliveryClosed/Detail"
+  },
+  {
+    "path": "/sinv/supplier-receipt-record",
+    "models": [
+      "sinv/supplierReceiptRecord"
+    ],
+    "component": "sinv/SupplierReceiptRecord"
+  },
+  {
+    "path": "/sinv/purchase-receipt-record",
+    "models": [
+      "sinv/purchaseReceiptRecord"
+    ],
+    "component": "sinv/PurchaseReceiptRecord"
+  },
+  {
+    "path": "/sinv/purchaser-delivery",
+    "models": [
+      "sinv/purchaserDelivery"
+    ]
+  },
+  {
+    "path": "/sinv/purchaser-delivery/list",
+    "models": [
+      "sinv/purchaserDelivery"
+    ],
+    "component": "sinv/PurchaserDelivery"
+  },
+  {
+    "path": "/sinv/purchaser-delivery/detail/",
+    "models": [
+      "sinv/purchaserDelivery"
+    ],
+    "component": "sinv/PurchaserDelivery/Detail"
+  },
+  {
+    "path": "/sinv/delivery-creation",
+    "models": [
+      "sinv/deliveryCreation"
+    ]
+  },
+  {
+    "path": "/sinv/delivery-creation/list",
+    "models": [
+      "sinv/deliveryCreation"
+    ],
+    "component": "sinv/DeliveryCreation"
+  },
+  {
+    "path": "/sinv/delivery-creation/detail/",
+    "models": [
+      "sinv/deliveryCreation"
+    ],
+    "component": "sinv/DeliveryCreation/Detail"
+  },
+  {
+    "path": "/sinv/purchase-reception/list",
+    "models": [
+      "sinv/purchaseReception"
+    ],
+    "component": "sinv/PurchaseReception"
+  },
+  {
+    "path": "/sinv/purchase-reception/detail/",
+    "models": [
+      "sinv/purchaseReception"
+    ],
+    "component": "sinv/PurchaseReception/Detail"
+  },
+  {
+    "path": "/sqam/create8D/list",
+    "models": [
+      "sqam/create8D"
+    ],
+    "component": "sqam/Create8D"
+  },
+  {
+    "path": "/sqam/create8D/create",
+    "models": [
+      "sqam/create8D"
+    ],
+    "component": "sqam/Create8D/Detail"
+  },
+  {
+    "path": "/sqam/create8D/detail/",
+    "models": [
+      "sqam/create8D"
+    ],
+    "component": "sqam/Create8D/Detail"
+  },
+  {
+    "path": "/sqam/audit8D/list",
+    "models": [
+      "sqam/audit8D"
+    ],
+    "component": "sqam/Audit8D"
+  },
+  {
+    "path": "/sqam/audit8D/detail/",
+    "models": [
+      "sqam/audit8D"
+    ],
+    "component": "sqam/Audit8D/Detail"
+  },
+  {
+    "path": "/sqam/audit8D/history/",
+    "models": [
+      "sqam/history8D"
+    ],
+    "component": "sqam/HistoryVerison"
+  },
+  {
+    "path": "/sqam/feedback8D/list",
+    "models": [
+      "sqam/feedback8D"
+    ],
+    "component": "sqam/Feedback8D"
+  },
+  {
+    "path": "/sqam/feedback8D/detail/",
+    "models": [
+      "sqam/feedback8D"
+    ],
+    "component": "sqam/Feedback8D/Detail"
+  },
+  {
+    "path": "/sqam/feedback8D/history/",
+    "models": [
+      "sqam/history8D"
+    ],
+    "component": "sqam/HistoryVerison"
+  },
+  {
+    "path": "/sqam/initiated8D/list",
+    "models": [
+      "sqam/initiated8D"
+    ],
+    "component": "sqam/Initiated8D"
+  },
+  {
+    "path": "/sqam/initiated8D/detail/",
+    "models": [
+      "sqam/initiated8D"
+    ],
+    "component": "sqam/Initiated8D/Detail"
+  },
+  {
+    "path": "/sqam/initiated8D/history/",
+    "models": [
+      "sqam/history8D"
+    ],
+    "component": "sqam/HistoryVerison"
+  },
+  {
+    "path": "/sqam/received8D/list",
+    "models": [
+      "sqam/received8D"
+    ],
+    "component": "sqam/Received8D"
+  },
+  {
+    "path": "/sqam/received8D/detail/",
+    "models": [
+      "sqam/received8D"
+    ],
+    "component": "sqam/Received8D/Detail"
+  },
+  {
+    "path": "/sqam/received8D/history/",
+    "models": [
+      "sqam/history8D"
+    ],
+    "component": "sqam/HistoryVerison"
+  },
+  {
+    "path": "/ssrc/quotation-controller/list",
+    "models": [
+      "ssrc/quotationController"
+    ],
+    "component": "ssrc/QuotationController"
+  },
+  {
+    "path": "/ssrc/inquiry-hall/list",
+    "models": [
+      "ssrc/inquiryHall"
+    ],
+    "component": "ssrc/InquiryHall"
+  },
+  {
+    "path": "/ssrc/inquiry-hall/quotation-monitor/",
+    "models": [
+      "ssrc/inquiryHall"
+    ],
+    "component": "ssrc/InquiryHall/Monitor"
+  },
+  {
+    "path": "/ssrc/query-rfq",
+    "models": [
+      "ssrc/inquiryHall",
+      "ssrc/queryRfq"
+    ]
+  },
+  {
+    "path": "/ssrc/offline-result-entry/list",
+    "models": [
+      "ssrc/offlineResultEntry"
+    ],
+    "component": "ssrc/OfflineResultEntry"
+  },
+  {
+    "path": "/ssrc/offline-result-entry/detail/",
+    "models": [
+      "ssrc/offlineResultEntry",
+      "ssrc/importExcel"
+    ],
+    "component": "ssrc/OfflineResultEntry/Detail"
+  },
+  {
+    "path": "/ssrc/expert-requisition/list",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Requisition"
+  },
+  {
+    "path": "/ssrc/expert-requisition/detail/",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Requisition/Detail"
+  },
+  {
+    "path": "/ssrc/expert-requisition/read-only-detail/",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Requisition/Detail"
+  },
+  {
+    "path": "/ssrc/expert-requisition/create",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Requisition/Detail"
+  },
+  {
+    "path": "/ssrc/expert-maintenace/list",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Maintenace"
+  },
+  {
+    "path": "/ssrc/expert-maintenace/detail/",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Maintenace/Detail"
+  },
+  {
+    "path": "/ssrc/expert-approve/list",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Approve"
+  },
+  {
+    "path": "/ssrc/expert-approve/detail/",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Approve/Detail"
+  },
+  {
+    "path": "/ssrc/expert-reqQuery/list",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/ReqQuery"
+  },
+  {
+    "path": "/ssrc/expert-reqQuery/detail/",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Approve/Detail"
+  },
+  {
+    "path": "/ssrc/expert-query/list",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Query"
+  },
+  {
+    "path": "/ssrc/expert-query/detail/",
+    "models": [
+      "ssrc/expert"
+    ],
+    "component": "ssrc/Expert/Query/Detail"
+  },
+  {
+    "path": "/ssrc/score",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/ssrc/plan-update/list",
+    "models": [
+      "ssrc/tenderPlan"
+    ],
+    "component": "ssrc/TenderPlan/PlanUpdate"
+  },
+  {
+    "path": "/ssrc/plan-update/detail/",
+    "models": [
+      "ssrc/tenderPlan"
+    ],
+    "component": "ssrc/TenderPlan/PlanUpdate/Detail"
+  },
+  {
+    "path": "/ssrc/plan-update/create",
+    "models": [
+      "ssrc/tenderPlan"
+    ],
+    "component": "ssrc/TenderPlan/PlanUpdate/Detail"
+  },
+  {
+    "path": "/ssrc/plan-query/list",
+    "models": [
+      "ssrc/tenderPlan"
+    ],
+    "component": "ssrc/TenderPlan/PlanQuery"
+  },
+  {
+    "path": "/ssrc/project-maintenance/list",
+    "models": [
+      "ssrc/tenderPlan"
+    ],
+    "component": "ssrc/TenderPlan/ProjectInfo"
+  },
+  {
+    "path": "/ssrc/project-maintenance/project-detail/",
+    "models": [
+      "ssrc/tenderPlan"
+    ],
+    "component": "ssrc/TenderPlan/ProjectInfo/Detail/ProjectInfoForm"
+  },
+  {
+    "path": "/ssrc/project-maintenance/create",
+    "models": [
+      "ssrc/tenderPlan"
+    ],
+    "component": "ssrc/TenderPlan/ProjectInfo/Detail/ProjectInfoForm"
+  },
+  {
+    "path": "/sprm/purchase-requisition-inquiry/list",
+    "models": [
+      "sprm/purchaseRequisitionInquiry"
+    ],
+    "component": "sprm/PurchaseRequisitionInquiry"
+  },
+  {
+    "path": "/sprm/purchase-requisition-inquiry/erp-detail/",
+    "models": [
+      "sprm/purchaseRequisitionInquiry"
+    ],
+    "component": "sprm/PurchaseRequisitionInquiry/ErpDetail"
+  },
+  {
+    "path": "/sprm/purchase-requisition-inquiry/not-erp-detail/",
+    "models": [
+      "sprm/purchaseRequisitionInquiry"
+    ],
+    "component": "sprm/PurchaseRequisitionInquiry/NotErpDetail"
+  },
+  {
+    "path": "/sprm/purchase-requisition-creation/list",
+    "models": [
+      "sprm/purchaseRequisitionCreation"
+    ],
+    "component": "sprm/PurchaseRequisitionCreation"
+  },
+  {
+    "path": "/sprm/purchase-requisition-cancel/list",
+    "models": [
+      "sprm/purchaseRequisitionCancel"
+    ],
+    "component": "sprm/PurchaseRequisitionCancel"
+  },
+  {
+    "path": "/sprm/purchase-requisition-cancel/detail-erp/",
+    "models": [
+      "sprm/purchaseRequisitionCancel"
+    ],
+    "component": "sprm/PurchaseRequisitionCancel/ERP"
+  },
+  {
+    "path": "/sprm/purchase-requisition-cancel/detail-non-erp/",
+    "models": [
+      "sprm/purchaseRequisitionCancel"
+    ],
+    "component": "sprm/PurchaseRequisitionCancel/Detail/NonErpPurchaseRequisition.js"
+  },
+  {
+    "path": "/sprm/purchase-requisition-approval/list",
+    "models": [
+      "sprm/purchaseRequisitionApproval"
+    ],
+    "component": "sprm/PurchaseRequisitionApproval"
+  },
+  {
+    "path": "/sprm/purchase-requisition-approval/detail-erp/",
+    "models": [
+      "sprm/purchaseRequisitionApproval"
+    ],
+    "component": "sprm/PurchaseRequisitionApproval/Detail/ErpPurchaseRequisition.js"
+  },
+  {
+    "path": "/sprm/purchase-requisition-approval/detail-non-erp/",
+    "models": [
+      "sprm/purchaseRequisitionApproval"
+    ],
+    "component": "sprm/PurchaseRequisitionApproval/Detail/NonErpPurchaseRequisition.js"
+  },
+  {
+    "path": "/scec/platform-custom-bar/list",
+    "models": [
+      "scec/customBar"
+    ],
+    "component": "scec/CustomBar/index.js"
+  },
+  {
+    "path": "/scec/platform-custom-bar/detail/",
+    "models": [
+      "scec/customBar",
+      "scec/goodsPreview"
+    ],
+    "component": "scec/CustomBar/PlatformDetail/Detail.js"
+  },
+  {
+    "path": "/scec/platform-custom-bar/create",
+    "models": [
+      "scec/customBar"
+    ],
+    "component": "scec/CustomBar/PlatformDetail/Detail.js"
+  },
+  {
+    "path": "/scec/company-custom-bar/list",
+    "models": [
+      "scec/customBar"
+    ],
+    "component": "scec/CustomBar"
+  },
+  {
+    "path": "/scec/company-custom-bar/detail/",
+    "models": [
+      "scec/customBar",
+      "scec/goodsPreview"
+    ],
+    "component": "scec/CustomBar/PlatformDetail/Detail.js"
+  },
+  {
+    "path": "/scec/company-custom-bar/create/",
+    "models": [
+      "scec/customBar"
+    ],
+    "component": "scec/CustomBar/PlatformDetail/Detail.js"
+  },
+  {
+    "path": "/scec/goods-maintain/goods-preview",
+    "models": [
+      ""
+    ],
+    "component": "scec/GoodsPreview"
+  },
+  {
+    "path": "/scec/goods-maintain-pur/goods-preview",
+    "models": [
+      ""
+    ],
+    "component": "scec/GoodsPreview"
+  },
+  {
+    "path": "/scec/goods-manage/list",
+    "models": [
+      "scec/goodsManage",
+      "scec/operateRecord"
+    ],
+    "component": "scec/GoodsManage/index"
+  },
+  {
+    "path": "/scec/goods-manage/detail",
+    "models": [
+      "scec/goodsManage",
+      "scec/operateRecord"
+    ],
+    "component": "scec/GoodsManage/Detail"
+  },
+  {
+    "path": "/scec/goods-manage/goods-preview-only",
+    "models": [
+      ""
+    ],
+    "component": "scec/GoodsPreview/PreGoodInfo"
+  },
+  {
+    "path": "/scec/goods-approve/list",
+    "models": [
+      "scec/goodsApprove",
+      "scec/operateRecord"
+    ],
+    "component": "scec/GoodsApprove"
+  },
+  {
+    "path": "/scec/goods-approve/detail",
+    "models": [
+      "scec/goodsApprove",
+      "scec/operateRecord"
+    ],
+    "component": "scec/GoodsApprove/Detail"
+  },
+  {
+    "path": "/scec/goods-approve/goods-preview-only",
+    "models": [
+      ""
+    ],
+    "component": "scec/GoodsPreview/PreGoodInfo"
+  },
+  {
+    "path": "/scec/goods-demand/list",
+    "models": [
+      "scec/goodsDemand",
+      "scec/operateRecord"
+    ],
+    "component": "scec/GoodsDemand"
+  },
+  {
+    "path": "/scec/goods-demand/detail",
+    "models": [
+      "scec/goodsDemand",
+      "scec/operateRecord"
+    ],
+    "component": "scec/GoodsDemand/Detail"
+  },
+  {
+    "path": "/scec/goods-demand/goods-preview-only",
+    "models": [
+      ""
+    ],
+    "component": "scec/GoodsPreview/PreGoodInfo"
+  },
+  {
+    "path": "/scec/goods-demand-pur/list",
+    "models": [
+      "scec/goodsDemandPur",
+      "scec/operateRecord"
+    ],
+    "component": "scec/GoodsDemandPur"
+  },
+  {
+    "path": "/scec/goods-demand-pur/detail",
+    "models": [
+      "scec/goodsDemandPur",
+      "scec/operateRecord"
+    ],
+    "component": "scec/GoodsDemandPur/Detail"
+  },
+  {
+    "path": "/scec/goods-demand-pur/goods-preview-only",
+    "models": [
+      ""
+    ],
+    "component": "scec/GoodsPreview/PreGoodInfo"
+  },
+  {
+    "path": "/scec/ec-client/list",
+    "models": [
+      "scec/ecClient"
+    ],
+    "component": "scec/ECClient/Org"
+  },
+  {
+    "path": "/scec/ec-client/assign",
+    "models": [
+      "scec/ecClientAssign"
+    ],
+    "component": "scec/ECClient/Org/Assign"
+  },
+  {
+    "path": "/scec/company-banner/list",
+    "models": [
+      "scec/companyBanner"
+    ],
+    "component": "scec/CompanyBanner"
+  },
+  {
+    "path": "/scec/company-banner/create/",
+    "models": [
+      "scec/companyBanner"
+    ],
+    "component": "scec/CompanyBanner/Create"
+  },
+  {
+    "path": "/scec/company-banner/detail/",
+    "models": [
+      "scec/companyBanner",
+      "scec/goodsPreview"
+    ],
+    "component": "scec/CompanyBanner/Detail"
+  },
+  {
+    "path": "/scec/platform-banner/list",
+    "models": [
+      "scec/companyBanner"
+    ],
+    "component": "scec/CompanyBanner"
+  },
+  {
+    "path": "/scec/platform-banner/create",
+    "models": [
+      "scec/companyBanner"
+    ],
+    "component": "scec/CompanyBanner/Create"
+  },
+  {
+    "path": "/scec/platform-banner/detail/",
+    "models": [
+      "scec/companyBanner",
+      "scec/goodsPreview"
+    ],
+    "component": "scec/CompanyBanner/Detail"
+  },
+  {
+    "path": "/mall/refresh",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/base.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/order-list.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/order-detail.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/address.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/product-detail.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/product-list.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/search-result.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/brand-list.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/settlement.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/cart.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/beforeheadOrder.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/mall/apply-result.html",
+    "models": [
+      ""
+    ],
+    "component": "mall/App"
+  },
+  {
+    "path": "/exception/404",
+    "models": [
+      ""
+    ],
+    "component": "Exception/404"
+  },
+  {
+    "path": "/exception/500",
+    "models": [
+      ""
+    ],
+    "component": "Exception/500"
+  },
+  {
+    "path": "/exception/trigger",
+    "models": [
+      "error"
+    ],
+    "component": "Exception/triggerException"
+  },
+  {
+    "path": "/test/test",
+    "models": [
+      ""
+    ],
+    "component": "test/Test"
+  },
+  {
+    "path": "/test/bank",
+    "models": [
+      "hpfm/bank"
+    ],
+    "component": "test/Bank"
+  },
+  {
+    "path": "/test/error",
+    "models": [
+      "hpfm/bank"
+    ],
+    "component": "test/Error"
+  },
+  {
+    "path": "/pub/hiam",
+    "models": [
+      ""
+    ]
+  },
+  {
+    "path": "/pub/hiam/sub-account-org/users",
+    "models": [
+      "hiam/subAccountOrg"
+    ],
+    "component": "hiam/SubAccount/Org"
+  },
+  {
+    "path": "/pub/hiam/sub-account-org/data-import/",
+    "models": [
+      "/*himp/commentImport*/"
+    ],
+    "component": "himp/CommentImport"
+  },
+  {
+    "path": "/pub/hiam/sub-account-org/authority-management",
+    "models": [
+      "hiam/authorityManagement/authorityManagement",
+      "hiam/authorityManagement/authorityCompany",
+      "hiam/authorityManagement/authorityCustomer",
+      "hiam/authorityManagement/authoritySupplier",
+      "hiam/authorityManagement/authorityPurorg",
+      "hiam/authorityManagement/authorityPuragent",
+      "hiam/authorityManagement/authorityPurcat",
+      ""
+    ],
+    "component": "hiam/SubAccount/Org/AuthorityManagement"
+  },
+  {
+    "path": "/pub/hiam/sub-account-site",
+    "models": [
+      "hiam/subAccount"
+    ],
+    "component": "hiam/SubAccount/Site"
+  },
+  {
+    "path": "/pub/ssrc/inquiry-hall/rfx-detail/",
+    "models": [
+      "ssrc/inquiryHall"
+    ],
+    "component": "ssrc/InquiryHall/Detail"
+  },
+  {
+    "path": "/spcm/contract-maintain/list",
+    "models": [
+      ""
+    ]
+  }
+]

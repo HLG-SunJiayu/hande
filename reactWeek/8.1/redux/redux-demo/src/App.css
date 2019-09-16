@@ -1,0 +1,40 @@
+.add{
+  width:100%;
+  height: 50px;
+  background-color: rgb(255, 231, 235);
+}
+
+.jingli{
+  width: 800px;
+  margin:0 auto;
+}
+.anniu{
+  text-align:center;
+  margin-top: 20px;
+}
+select{
+  width: 200px;
+  height: 30px;
+  color:gray;
+  
+}
+input{
+  width: 195px;
+  height: 25px;
+  color:gray;
+}
+.tijiao{
+  width: 180px;
+  height: 30px;
+  background-color: rgb(50, 50, 211);
+  color:white;
+}
+.quxiao{
+  width: 180px;
+  height: 30px;
+  background-color:white;
+  color:rgb(50, 50, 211);
+}
+span{
+  color:red;
+}

@@ -1,0 +1,47 @@
+{
+  "name": "hips-multi-module-vue-develop",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "serve": "cross-env VUE_APP_BUILD=dev vue-cli-service serve",
+    "serve:mock": "cross-env VUE_APP_MOCK=yes VUE_APP_BUILD=dev vue-cli-service serve",
+    "build:module-a": "cross-env VUE_APP_BUILD=release VUE_APP_TARGET=module-a vue-cli-service build --mode production --dest dist/module-a",
+    "build": "npm run build:module-a",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "fastclick": "^1.0.6",
+    "hips": "^0.1.43",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "mockjs": "^1.0.1-beta3",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-px-to-viewport": "^1.1.0",
+    "postcss-url": "^8.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vconsole": "^3.3.2",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

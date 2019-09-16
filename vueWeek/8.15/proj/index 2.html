@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <style>
+        #app{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .global {
+            width: 60%;
+            height: 300px;
+        }
+
+        .input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .list {
+            margin-top: 20px;
+            border: 1px solid rgb(175, 175, 214);
+        }
+
+        .listhead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(226, 226, 243);
+            padding: 0 20px;
+        }
+
+        .listtab {
+            display: flex;
+        }
+
+        .listfoot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(226, 226, 243);
+            padding: 0 20px;
+            color: white；
+        }
+
+        .button-one {
+            width: 50px;
+            height: 30px;
+            background-color: blue;
+            text-align: center;
+            border: 1px solid rgb(175, 175, 214);
+        }
+
+        .button-two {
+            width: 70px;
+            height: 30px;
+            background-color: white;
+            text-align: center;
+            border: 1px solid rgb(175, 175, 214);
+        }
+
+        .button-three {
+            width: 70px;
+            height: 30px;
+            background-color: white;
+            text-align: center;
+            border: 1px solid rgb(175, 175, 214);
+        }
+
+        .add {
+            width: 50px;
+            height: 30px;
+            background-color: blue;
+            text-align: center;
+            border: 1px solid rgb(175, 175, 214);
+        }
+
+        .box {
+            width: 250px;
+            height: 25px;
+        }
+
+        .content {
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0px;
+        }
+        .class1{
+            width: 70px;
+            height: 35px;
+            background-color: rgb(14, 207, 111);
+            color: white;
+        }
+        .class2{
+            width: 90px;
+            height: 35px;
+            background-color: rgb(255, 199, 16);
+            color: white;
+        }
+        .del{
+            width: 60px;
+            height: 35px;
+            background-color: rgb(218, 40, 40);
+            color: white;
+        }
+        .shan{
+            width: 70px;
+            height: 35px;
+            background-color: rgb(218, 40, 40);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="global">
+            <div class="input">
+                <input class="box" type="text" v-model="id">
+                <input class="add" type="submit" @click="addData" value="添加" />
+            </div>
+            <div class="list">
+                <div class="listhead">
+                    <div>任务列表</div>
+                    <div class="listtab">
+                        <button class="button-one" @click="gai(1)">全部</button>
+                        <button class="button-two" @click="gai(2)">已完成</button>
+                        <button class="button-three" @click="gai(3)">未完成</button>
+                    </div>
+                </div>
+                <div class="content" v-for="(item,index) in newList">
+                  <div>
+                    <input type="checkbox" :checked="item.isCheck" @click="handleState(index)"/>
+                    {{item.id}}
+                  </div>
+                  <div>
+                    <button :class="item.ToggleOn === true ? 'class1':'class2'"
+                        @click="handleClick(index)">{{item.ToggleOn === true ? '标记完成':'标记未完成'}}</button>
+                    <button class="del" @click="feat()">删除</button>
+                  </div>
+                  
+                </div>
+                <div class="listfoot">
+                    <div><input id="check" @click="checkall" type="checkbox" v-model="isCheckall"/><span>全选</span></div>
+                    <div>
+                        <button class="shan" @click="feat()">删除所选</button>
+                    </div>
+
+                </div>
+            </div>
+            <div className="ztoly">共<span class="len">{{list.length}}</span>项任务</div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                id: '',
+                // ToggleOn: true,
+                list: [
+                    { id: 11111,ToggleOn:true,isCheck:false},
+                    { id: 22222,ToggleOn:false,isCheck:false}
+                ],
+                curId:1,
+                isCheckall:false
+
+
+            },
+            methods: {
+                addData() {
+
+                    // 包装成list要求的对象
+                    var p = { id: this.id,ToggleOn:true,isCheck:false}
+                    this.list.push(p);
+                    //清空文本框中的数据
+                    this.id = '';
+                },
+                // delData(i) {
+                //     if (!confirm('是否要删除当前数据')) {
+                //         //当用户点击的取消按钮的时候，应该阻断这个方法中的后面代码的继续执行
+                //         return;
+                //     }
+
+                //     // 方法一
+                //     // this.list.splice(index,1);
+                //     // 方法二：
+                //     // 根据 id 获取要删除的索引，方法一是直接传入删除数组的索引
+                //     var index = this.list.findIndex(function (item) {
+                //         return  item.isCheck === true;
+                //     });
+                    
+                //     this.list.splice(i, 1);
+                // },
+
+                gai(type) {
+                   
+                    this.curId = type;
+                    console.log(this.curId);
+                },
+                handleClick(index) {
+                    this.list[index].ToggleOn = !this.list[index].ToggleOn;
+                    console.log(index);
+                    // this.ToggleOn = !this.ToggleOn;
+
+
+                },
+                handleState(index){
+                    this.list[index].isCheck=!this.list[index].isCheck;
+                    console.log(this.list[index].isCheck);
+                },
+                checkall() {
+                   // var mucheck = document.getElementsByTagName('input');
+                    //for (let index = 0; index < mucheck.length - 1; index++) {
+                    //     var mucheck = document.getElementsByTagName('input');
+                    //     if (mucheck[mucheck.length - 1].checked === true) {
+                    //         mucheck[index].checked = true;
+                    //     } else {
+                    //         mucheck[index].checked = false;
+                    //     }
+
+                    // }
+                    this.list.forEach((item,index) => {
+                        item.isCheck=true;
+                         
+                    });
+                },
+                feat() {
+                    
+                    // this.list.filter((item,index)=>item.isCheck===false);
+                    this.list.forEach((item,index) => {
+                        if(item.isCheck===true){
+                            console.log(index);
+                            this.list.splice(index,Infinity);
+                         }
+                    });
+                    // var mucheck = document.getElementsByTagName('input');
+                    // for (let index = 0; index < mucheck.length - 1; index++) {
+                    //     if (mucheck[index].checked) {
+                    //            // delData(Number.parseInt(mucheck[index].value));
+                    //            this.shan(Number.parseInt(mucheck[index].value));
+                    //     }
+                    // }
+                },
+                //shan(id) {
+                //     let indy = '';
+                //     for (let [index, item] of this.list.entries()) {
+
+                //         if (item.id === id) {
+
+                //             indy = index;
+                //             break;
+                //         }
+
+                //     }
+                    
+                //         console.log(id);
+                //         this.list.splice(indy, 1);
+                    
+
+                // },
+
+
+            },
+            computed:{
+                newList(){
+                   let list = this.list;
+                   let curId = this.curId;
+                   return (curId === 1 )? list : (curId === 2) ? list.filter(item=>item.ToggleOn === true) :list.filter(item=>item.ToggleOn === false) 
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>

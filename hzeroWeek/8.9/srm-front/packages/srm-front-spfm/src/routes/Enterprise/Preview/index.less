@@ -1,0 +1,35 @@
+@import '~hzero-front/lib/assets/styles/utils.less';
+
+.approval-detail {
+  .item-wrapper {
+    margin-top: 41px;
+    &-title {
+      position: relative;
+      margin-bottom: 24px;
+      font-size: 16px;
+      font-weight: normal;
+      &::before {
+        content: '';
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        height: 16px;
+        margin-right: 10px;
+        border-left: 3px solid #5e7ee6;
+      }
+    }
+    .fields {
+      display: inline-block;
+      // width: 85px;
+      color: #999;
+      font-size: 12px;
+    }
+    .fields-content {
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+    }
+  }
+  .item-wrapper:nth-child(1) {
+    margin-top: 0;
+  }
+}

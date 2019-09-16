@@ -1,0 +1,51 @@
+# Default values for api-gateway.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: registry.choerodon.com.cn/choerodon/srm-front
+  pullPolicy: Always
+
+metrics:
+  path: /prometheus
+  label: nginx
+
+logs:
+  parser: nginx
+
+service:
+  enable: false
+  type: ClusterIP
+  port: 8000
+  name: srm-front
+
+ingress:
+  enable: false
+  host: example.com
+
+env:
+  open:
+    BUILD_BASE_PATH: /
+    BUILD_WEBSOCKET_HOST: ws://192.168.12.101:8260
+    BUILD_SRC_WEBSOCKET_HOST: http://192.168.12.101:8412
+    BUILD_CLIENT_ID: srm-front-uat
+    BUILD_API_HOST: http://hzerob.saas.hand-china.com  # http://192.168.12.101:8080/
+    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
+    BUILD_PLATFORM_VERSION: SAAS
+    BUILD_WFP_EDITOR: http://hzerob.saas.hand-china.com/hwfp
+    BUILD_SRM_MALL_HOST: http://srm-mall.test.saas.hand-china.com
+    BUILD_LOGIN_URL: http://hzerob.saas.hand-china.com/oauth/
+    BUILD_LOGOUT_URL: http://hzerob.saas.hand-china.com/oauth/logout
+resources:
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources,such as Minikube. If you do want to specify resources,uncomment the following
+  # lines,adjust them as necessary,and remove the curly braces after 'resources:'.
+  limits:
+    # cpu: 100m
+    # memory: 2Gi
+  requests:
+    # cpu: 100m
+    # memory: 1Gi

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <style>
+        .class1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .class2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" :class="ToggleOn === true ? 'class1':'class2'">
+        <button @click="handleClick">变色</button>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                ToggleOn: true,
+            },
+            methods: {
+                handleClick() {
+                    //  ToggleOn:!ToggleOn
+                    this.ToggleOn = !this.ToggleOn;
+
+
+                }
+
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+<script src="../js/vue-validator.min.js"></script>
+<script src="../js/vue-validator.common.min.js"></script>
+<style>
+ 
+    table{
+        width: 800px;
+        border-collapse: collapse;
+        margin: 20px auto;
+    }
+    table th,table td{
+        background: #ddebf5;
+        color: rgb(2, 16, 56);
+        font-size: 16px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    table td{
+        background: #fff;
+        
+    }
+    
+      
+    .biaodan{
+        
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+</head>
+<body>
+    <div id="app">
+        <form @submit.prevent="submit" class="biaodan">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工号：<input type="text" v-model="id"></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名：<input type="text" v-model="name"></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别：<input type="text" v-model="gender"></br>
+        手机号码：<input type="text" v-model="phone"></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：<input type="text" v-model="address"></br>
+        <input type="submit" @click="addData" value="保存"/>
+        </form>
+        <table>
+            <tr>
+                
+                <th>工号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>手机号码</th>
+                <th>地址</th>
+                <th>操作</th>
+            </tr>
+            <tr v-for="(item,index) in list">
+                
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.gender}}</td>
+                <td>{{item.phone}}</td>
+                <td>{{item.address}}</td>
+                <td>
+                    <!-- 方法一 -->
+                    <!-- <a href="#" @click="delData(index)">删除</a> -->
+                    <!-- 方法二 -->
+                    <a href="#" @click="delData(item.id)">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+  
+ 
+<script>
+ 
+ var vm = new Vue({
+        el: '#app',
+        data: {
+            id: '',
+            name: '',
+            gender:"",
+            phone:'',
+            address:'',
+            
+              list: [
+                {id: 1, name: '张三', gender: '女', phone: '12345678909', address: '哈尔滨'}
+            ]
+            
+            
+        },
+        methods: {
+
+            // submit(){
+            //     if(!this.id){
+            //         showToast('请输入工号')
+            //         return false
+            //     }
+            //     if(!this.name){
+            //         showToast('请输入姓名')
+            //         return false
+            //     }
+            //     return true
+            // },
+            addData(){
+                if(this.id==""){
+                    alert("工号不能为空");
+                    return false;
+                }
+                if(this.name==""){
+                    alert("姓名不能为空");
+                    return false;
+                }
+                if(this.gender==""){
+                    alert("性别不能为空");
+                    return false;
+                }
+                if(this.phone==""){
+                    alert("手机号码不能为空");
+                    return false;
+                }
+                if(this.address==""){
+                    alert("地址不能为空");
+                    return false;
+                }
+                // 包装成list要求的对象
+                var p = {id: this.id, name: this.name,  gender: this.gender, phone: this.phone, address: this.address}
+                 this.list.push(p);
+                 //清空文本框中的数据
+                 this.id = 0;
+                 this.name = '';
+                 this.gender = '';
+                 this.phone = '';
+                 this.address = '';
+            },
+            delData: function(index){
+                if(!confirm('是否要删除当前数据')){
+                    //当用户点击的取消按钮的时候，应该阻断这个方法中的后面代码的继续执行
+                    return;
+                }
+
+                // 方法一
+                // this.list.splice(index,1);
+                // 方法二：
+                // 根据 id 获取要删除的索引，方法一是直接传入删除数组的索引
+                var index = this.list.findIndex(function(item){
+                    return item.id == index;
+                });
+                this.list.splice(index,1);
+            }
+        },
+        /*mounted(){
+          console.log(this.list);
+        }*/
+    });
+
+</script>
+</body>
+</html>
